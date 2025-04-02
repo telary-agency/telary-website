@@ -276,3 +276,27 @@ nav a:hover {
 .blog-posts p {
     color: #666;
 }
+
+#toc {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#toc h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#toc-content {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+#toc-content a:hover {
+    text-decoration: underline;
+}

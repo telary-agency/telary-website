@@ -5,10 +5,16 @@
 <body>
     {% include header.html %}
 
-    <main class="content-container" style="display: flex;">
+    <main class="" style="display: flex;">
+
+        <!-- Table of Contents Section -->
+        <nav id="toc" style="padding: 20px; border-right: 1px solid #ddd;">
+            <h2>Table of Contents</h2>
+            <div id="toc-content"></div>
+        </nav>
 
         <!-- Article Section -->
-        <article style="flex: 3;">
+        <article class="content-container" style="padding: 20px;">
             <h1>{{ page.title }}</h1>
             <p>{{ page.date | date: "%B %d, %Y" }}</p>
             <div>
@@ -18,6 +24,23 @@
     </main>
 
     {% include footer.html %}
+
+    <!-- Include tocbot script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            tocbot.init({
+                // Where to render the table of contents.
+                tocSelector: '#toc-content',
+                // Where to grab the headings to build the table of contents.
+                contentSelector: 'article',
+                // Which headings to grab inside of the contentSelector element.
+                headingSelector: 'h1, h2, h3',
+                // For smooth scrolling
+                scrollSmooth: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
