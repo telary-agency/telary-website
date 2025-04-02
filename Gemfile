@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.2"
-
-# If you want to use GitHub Pages, uncomment this line
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  # Add any Jekyll plugins here
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 # Windows and JRuby does not include zoneinfo files

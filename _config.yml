@@ -5,4 +5,12 @@ url: ""
 collections:
   posts:
     output: true
-permalink: /:categories/:year/:month/:day/:title.html 
+permalink: /:categories/:year/:month/:day/:title.html
+
+# GitHub Pages configuration
+github: [metadata]
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap 
