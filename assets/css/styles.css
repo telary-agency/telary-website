@@ -248,3 +248,31 @@ nav a:hover {
     margin: 0 auto;
     padding: 20px;
 }
+
+.blog-posts {
+    margin: 20px 0;
+}
+
+.blog-posts h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.blog-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-posts li {
+    margin-bottom: 20px;
+}
+
+.blog-posts a {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.blog-posts p {
+    color: #666;
+}

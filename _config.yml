@@ -1,4 +1,8 @@
 title: Telary - Data made Agile
 description: Let's build your data platform
 baseurl: ""
-url: "" 
+url: ""
+collections:
+  posts:
+    output: true
+permalink: /:categories/:year/:month/:day/:title.html 
