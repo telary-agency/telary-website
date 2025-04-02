@@ -1,7 +1,7 @@
 title: Telary - Data made Agile
 description: Let's build your data platform
 baseurl: ""
-url: ""
+url: "https://telary.io"
 collections:
   posts:
     output: true
