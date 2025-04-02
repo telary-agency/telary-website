@@ -5,7 +5,7 @@ url: "https://telary.io"
 collections:
   posts:
     output: true
-permalink: /:title
+permalink: /:title/
 
 # GitHub Pages configuration
 github: [metadata]
