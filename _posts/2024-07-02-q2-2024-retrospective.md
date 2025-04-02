@@ -16,7 +16,7 @@ Using the network of CTOs from CO-CTOs I did an audit and started working on a S
 This summer my work for one of my biggest client will be finished, the data platform works, and the team is fully autonomous, I don't think there are any blockers left so we decided to end it. It's cool to see that there is a way to finish a contact, even if the data platform is something always evolving we reached a point where there is not so much incertinity.
 
 The good news is that I continued increasing the diversification of my turnover, all is not visible in this chart due to billing reasons, it should be better next quarter.
-![](https://blog.telary.io/content/images/2024/07/image-1.png)Biggest client turnover went from 74 to 65%, and should be around 45% at end of July
+![](/assets/img/2024/07/image-1.png)Biggest client turnover went from 74 to 65%, and should be around 45% at end of July
 Regarding the tasks I did:
 👉 Mostly quotes, and sales documents, I start to get fairly efficient and think my quotes are impactful
 👉 Some Data Engineering Databricks, Snowflake and an entire mission around SQL
