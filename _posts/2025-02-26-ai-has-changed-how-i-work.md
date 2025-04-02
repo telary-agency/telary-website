@@ -204,7 +204,14 @@ I wanted to build an api route to stream an audio conversion done by Mistral AI.
         model = "/home/constant/en_US-lessac-medium.onnx"
         voice = PiperVoice.load(model)
         text = """
-        The Waveform Audio File Format (WAV or WAVE) is a widely used audio format, originally developed by Microsoft and IBM and based on the RIFF wrapper format. The usual audio encoding in a .wav file is LPCM, considered an 'uncompressed' encoding. Because of large file sizes, WAV is not well-suited for distributing audio such as songs or podcasts. WAV is used in MS-Windows to store sounds used in applications. It is also used as an archival format for first-generation (master) files, often with a metadata chunk as specified in the Broadcast Wave (BWF) standard.
+        The Waveform Audio File Format (WAV or WAVE) is a widely used audio format, 
+        originally developed by Microsoft and IBM and based on the RIFF wrapper format.
+        The usual audio encoding in a .wav file is LPCM, considered an 'uncompressed' 
+        encoding. Because of large file sizes, WAV is not well-suited for distributing
+        audio such as songs or podcasts. WAV is used in MS-Windows to store sounds 
+        used in applications. It is also used as an archival format for first-generation
+        (master) files, often with a metadata chunk as specified in 
+        the Broadcast Wave (BWF) standard.
         """
         wav_file = tts_file(voice=voice, text=text)
         #response = HttpResponse()
