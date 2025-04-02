@@ -14,7 +14,7 @@ Today we're talking career evolution, and why you can feel stuck and what can be
 Let's say you started as a Software or Data Engineer, you understood how the market worked as explained by Gergely Orosz in English ([here](https://newsletter.pragmaticengineer.com/p/trimodal-nature-of-tech-compensation)) or by Hugo Lassiège [here](https://eventuallycoding.com/2021/07/06/les-salaires-dans-la-tech) (in French)
 
 A quick recap is:
-![](__GHOST_URL__/content/images/2024/06/data-src-image-02eafbab-2e29-4170-8e71-218dafd80183.png)Tech and BigTech are a really small part of the market
+![](https://blog.telary.io/content/images/2024/06/data-src-image-02eafbab-2e29-4170-8e71-218dafd80183.png)Tech and BigTech are a really small part of the market
 There market for tech engineers is divided in 4 and the salaries are limited by the group in which your company belong. 
 
 - Local offers the lowest salaries because the impact you will have in this kind of company is low. Because the customer base is small and the turnover is limited
@@ -25,13 +25,13 @@ There market for tech engineers is divided in 4 and the salaries are limited by 
 ## The limit
 
 In France, once you reach a 80 to 100k€ package, you can get stuck (even earlier if you're an individual contributor) because in local and glocal companies your impact especially as an IC will not be able to offset this big package.
-![](__GHOST_URL__/content/images/2024/07/image-3.png)Example of package of CEOs of companies in France ([source]( https://www.insee.fr/fr/statistiques/2381342#figure1_radio2))
+![](https://blog.telary.io/content/images/2024/07/image-3.png)Example of package of CEOs of companies in France ([source]( https://www.insee.fr/fr/statistiques/2381342#figure1_radio2))
 If you're in a company where the CEO isn't paying himself more than 80k you're probably not going 6 figure. And it goes for a lot of other situations, if you're not managing X people you're probably not getting 6 figures, if your manager is not making this salary you will not get it.
 
 *In France after reaching >100k salary it gets more fiscally efficient to get paid using dividends so it's probably why the base package doesn't change that much after 500 employees.*
 
 Another thing to take into account is the repartitions of the companies sizes.
-![](__GHOST_URL__/content/images/2024/06/image-1.png)Less than 4% of the companies in France have more than 10 employees6.000 companies have more than 250 employees
+![](https://blog.telary.io/content/images/2024/06/image-1.png)Less than 4% of the companies in France have more than 10 employees6.000 companies have more than 250 employees
 ## The solution
 
 The solution is simply to be visible, however you want. I think you will get stuck or very limited in your career the moment you reach the ceiling and you're not visible. Your visibility could be the hammer to break this glass ceiling.

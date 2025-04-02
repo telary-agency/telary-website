@@ -277,6 +277,13 @@ nav a:hover {
     color: #666;
 }
 
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 #toc {
     background-color: #f9f9f9;
     border-radius: 5px;

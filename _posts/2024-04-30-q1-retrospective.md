@@ -33,4 +33,4 @@ What I did:
 **Overall:** I’m fairly satisfied with this new way of doing consulting. I discovered I really liked the first few calls with a client trying to understand their needs, their vision on tech and how we could reach our goal together.
 
 Regarding my turnover I still have one big client and a big dependency to it but I'm starting to diversify. That's probably the thing I should try to tackle first.
-![](__GHOST_URL__/content/images/2024/06/data-src-image-a0d735a9-2a01-4b9e-a78f-e9515f19b9fd.png)74% of my turnover depends on a single client which is far from ideal
+![](https://blog.telary.io/content/images/2024/06/data-src-image-a0d735a9-2a01-4b9e-a78f-e9515f19b9fd.png)74% of my turnover depends on a single client which is far from ideal

@@ -22,7 +22,7 @@ The goal of this post is to explain what I’ve done with HTMX, if it works and 
 So the scope of the web app was well defined I wanted to have 3 panels on with a menu that can be complex, another one with a list holding my infinite scroll of items to read and the last panel to display the details of the selected element in the second panel.
 
 All good but my challenge was that my WebApp needed to have a very good mobile support and something like the 3 panel should becomes 3 tabs on mobile devices. Responsive design is perfect for this change of layout but the behaviour is the real challenge.
-![](__GHOST_URL__/content/images/2024/11/3_panels.png)Desktop layout, red square, green square and purple square are the 3 panels on my layout![](__GHOST_URL__/content/images/2024/11/diagram_researca-Page-4.png)Example of mobile layout
+![](https://blog.telary.io/content/images/2024/11/3_panels.png)Desktop layout, red square, green square and purple square are the 3 panels on my layout![](https://blog.telary.io/content/images/2024/11/diagram_researca-Page-4.png)Example of mobile layout
 So my stack would be:
 
 - Django in the backend, it has a lot of features, easy to use, and I have a bit of experience with it…
@@ -94,7 +94,7 @@ This will handle the navigation but not the refresh of the data, where htmx star
 ## HTMX
 
 Using Django I used templates and that’s cool because it makes reusing components very easy, exactly what I want to do with htmx.
-![](__GHOST_URL__/content/images/2024/11/image.png)example of templates used
+![](https://blog.telary.io/content/images/2024/11/image.png)example of templates used
 I decided to split my templates based on where they will sit on my layout. It makes it easier to find the component you need to update.
 
 And my HTMX route with only be something like that:

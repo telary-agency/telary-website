@@ -13,7 +13,7 @@ This article is still a work in progress, but should be finished soon
 
 For one of my client I performed a migration from an on-premise data platform to a data platform on AWS using Snowflake. 
 
-This blog post is here to explain how we split this task in smaller ones, through which stages we went and what were the issues. I will not go into details regarding code conversion but [this part](__GHOST_URL__/migrating-from-spark-to-snowpark/#details-on-the-code-conversion) for some other posts about this.
+This blog post is here to explain how we split this task in smaller ones, through which stages we went and what were the issues. I will not go into details regarding code conversion but [this part](https://blog.telary.io/migrating-from-spark-to-snowpark/#details-on-the-code-conversion) for some other posts about this.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Regarding data sizes, we had several tables holding billions of rows and hundred
 The biggest key-elements defining our stack was that we didn't want to do maintenance on our tool anymore, we needed, notebooks, pyspark compatibility, easy scalability and make the migration the easiest possible.
 
 The design was composed of AWS components and Snowflake as Warehouse. We also decided to use Databricks for the notebooks while waiting for Snowflake notebooks to be ready. It was also a simple way for us to still have a Spark cluster easily accessible if we were not able to run our PySpark code on Snowpark (even if the sales people say so, you better check)
-![](__GHOST_URL__/content/images/2024/06/data_platform_generalities-Page-7.png)Example of the type of tech stack we did. Databricks is a bit overkill but their notebooks are fire
+![](https://blog.telary.io/content/images/2024/06/data_platform_generalities-Page-7.png)Example of the type of tech stack we did. Databricks is a bit overkill but their notebooks are fire
 ## State of Snowflake
 
 In end of 2022 the version 1.0.0 of Snowpark for Python was released. We started working with the 1.1.0, the technology was good enough even if we found some small bugs in our testing. The only issue we had was that we didn't find that much examples on the internet and especially almost no issues about Snowpark on StackOverflow.
@@ -171,7 +171,7 @@ the output looked like this:
 We ran it on Spark output and on Snowpark. It can be really slow obviously but it's not like you don't have any other things to do during a migration.
 
 The cool thing about having a full text display is that we could use git diff to compare the results and visually (and easily) ensure that there are no changes or only expected ones.
-![](__GHOST_URL__/content/images/2024/06/image-2.png)In this case after investigation we confirm the single row change, was a change that happened after the copy was done.
+![](https://blog.telary.io/content/images/2024/06/image-2.png)In this case after investigation we confirm the single row change, was a change that happened after the copy was done.
 We did that for all the jobs, sometimes with several back and forth. We even found that we fixed some bugs during the migrations.
 
 ## Pyspark / Snowpark incompatibilities
