@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telary - Data made Agile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+            gap: 1rem;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #000;
+            border-left: 1px solid #ccc;
+            padding-left: 1rem;
+        }
+
+        /* Rest of the styles remain unchanged */
+        h1,
+        h2,
+        h3 {
+            margin-top: 1.5rem;
+        }
+
+        .section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background: #f0f9ff;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .card ul li::before {
+            content: '›';
+            margin-right: 0.5rem;
+            color: #555;
+        }
+
+        .details {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            display: none;
+            margin-top: 1rem;
+        }
+
+        button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-around;
+            padding: 1rem 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 0.5rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        footer {
+            background: #f8f8f8;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="telary.svg" alt="Telary Logo">
+        <span class="tagline">Data made Agile</span>
+    </header>
+
+    <!-- Rest of the HTML remains unchanged -->
+    <div class="section">
+        <h1>Let's build your data platform</h1>
+        <p>We're here to help you <strong>design</strong>, <strong>setup</strong> and <strong>build your next data
+                platform</strong>. 3 key points to our approach.</p>
+        <div class="grid">
+            <div>📌 Cost effective</div>
+            <div>📌 Business oriented</div>
+            <div>📌 Vendor agnostic</div>
+        </div>
+
+        <div class="card">
+            <h2>1️⃣ Co-Create & Design</h2>
+            <ul>
+                <li>We discuss your need</li>
+                <li>Find some solutions</li>
+                <li>Define a proof of concept or the minimum viable product</li>
+            </ul>
+            <p>📅 Around 2 weeks / part time<br>
+                🎯 Define the "WHY" & the "HOW"<br>
+                📦 Detailed architecture & design documentation</p>
+            <button onclick="toggleDetails('designDetails')">➔ More details</button>
+            <div class="details" id="designDetails">
+                <h3>What's our goal?</h3>
+                <p>Discuss your pain-points, find some problems we could solve using data solutions. Define the scope of
+                    the minimum viable product and work on the timeline to build it.</p>
+
+                <div>
+                    <p><strong>In the end we should have:</strong></p>
+                    <ul>
+                        <li>A detailed architecture & design documentation</li>
+                        <li><strong>Be really excited to work on the MVP</strong></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Why build a data platform?</h2>
+                        <h4>What's a data platform?
+                    </h3>
+                    <p>A data platform is a set of software components used to gather, store, organise and use data. You
+                        can
+                        choose a one-stop shop or combine different tools to fit your needs.</p>
+                    <img src="data-platform-diagram.png" alt="Components of a modern data platform"
+                        style="width: 100%; max-width: 700px;">
+                </div>
+
+                <h2>Common use-cases</h2>
+                <table>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Use Case</th>
+                    </tr>
+                    <tr>
+                        <td>Artificial Intelligence</td>
+                        <td><strong>There is no AI without data</strong><br>Explore NLP, LLMs, or classical algorithms
+                            with
+                            proper data foundations.</td>
+                    </tr>
+                    <tr>
+                        <td>Compliance</td>
+                        <td><strong>Ensure you comply with law, industry standards…</strong><br>Prevent money
+                            laundering,
+                            track client activity, detect anomalies.</td>
+                    </tr>
+                    <tr>
+                        <td>Legal</td>
+                        <td><strong>Produce the legal documents you need</strong><br>Track lifecycle of a product across
+                            production steps.</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td><strong>Help your support team get more efficient</strong><br>Centralize client information,
+                            reduce response time.</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics</td>
+                        <td><strong>Make the most of your marketing campaigns</strong><br>Centralise, store and keep
+                            most of the data points of all your marketing campaigns and take decision backed by data
+                            analisys.</td>
+                    </tr>
+                    <tr>
+                        <td>Business Intelligence</td>
+                        <td><strong>Dashboards and KPI</strong><br>Become a data-centric or data-oriented company and
+                            take decision based on the data you have.</td>
+                    </tr>
+                    <tr>
+                        <td>Fraud</td>
+                        <td><strong>Find fraudster and make your business more secure</strong><br>Using your data
+                            platform detect abnormal behaviour or strange patterns/change in the data like an increase
+                            in refunds.</td>
+                    </tr>
+                    <tr>
+                        <td>Data brokerage</td>
+                        <td><strong>Find new ways to make the most of your business</strong><br>Sell the data you manage
+                            to other companies.</td>
+                    </tr>
+                </table>
+
+                <p>A data platform can help in all the division of a company, the key to a successful data initiative is
+                    to not get lost and stay focus on the defined goal to ensure a return on investment.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2️⃣ Setup & Deploy</h2>
+            <ul>
+                <li>We start deploying the data platform</li>
+                <li>You start experimenting with it</li>
+                <li>Confirm that we solve an impacting pain-point</li>
+            </ul>
+            <p>📅 Between 1 and 3 months / full time or part time<br>
+                🎯 Build the platform & confirm the need<br>
+                📦 A working POC/MVP of your data platform</p>
+            <button onclick="toggleDetails('deployDetails')">➔ More details</button>
+            <div class="details" id="deployDetails">
+                <h3>Requirements</h3>
+                <ul>
+                    <li>At least one well defined and business impacting use-case</li>
+                    <li>A first architecture design, can be partial</li>
+                    <li>Some questions that we need to answer</li>
+                </ul>
+
+                <h3>What's our goal?</h3>
+                <p>Confirm that the problem we're solving is really impacting and can be solved by a data related
+                    solution.</p>
+
+                <h3>In the end we should have:</h3>
+                <ul>
+                    <li>Deployed the most important components of platform</li>
+                    <li>Found answers to the design choices we were ensure about</li>
+                    <li><strong>Be confident that we're building something that matters</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>3️⃣ Make it your own</h2>
+            <ul>
+                <li>We hire your team members</li>
+                <li>We improve ease of maintenance</li>
+                <li>We ensure everything runs as expected</li>
+                <li>We work on first features</li>
+            </ul>
+            <p>📅 Whatever is necessary / part time<br>
+                🎯 Make the product reliable and the team ready<br>
+                📦 A well sized and autonomous team</p>
+            <button onclick="toggleDetails('ownDetails')">➔ More details</button>
+            <div class="details" id="ownDetails">
+                <h3>Requirements</h3>
+                <ul>
+                    <li>The MVP/POC of the data platform was successfully deployed</li>
+                </ul>
+
+                <h3>What's our goal?</h3>
+                <p>Now that we know the impact of our work and that the platform is up and running, in this last step we
+                    want to transfer the ownership of the platform to your team, and if needed build it.</p>
+
+                <h3>In the end we should have:</h3>
+                <ul>
+                    <li>A team confident and ready to run your platform</li>
+                    <li>And a partner to help your in the long run, us</li>
+                </ul>
+
+                <h3>What are the titles in a data team?</h3>
+                <p>Usually a data team is composed of some:</p>
+                <ul>
+                    <li><strong>Data Engineers</strong> in charge of managing the ETL pipeline, ensuring that the
+                        automated tasks are running successfully, fixing eventual bugs and optimisation.</li>
+                    <li><strong>Data Ops</strong> (Data Dev Ops): usually in charge of the setup of the platform, they
+                        are also responsible for the network configuration, the IaC, security, the CI/CD...</li>
+                    <li><strong>Data Analysts</strong> explore the data, create new gold layers tables, propose some
+                        data visualizations</li>
+                    <li><strong>Data Stewards</strong> works on data governance, ensuring consistency between all the
+                        data sources, keeping a data glossary up-to-date, and ensuring a logical data lineage.</li>
+                    <li><strong>Data Architect</strong> define, and design the major components of the data platform,
+                        ensuring business needs are met.</li>
+                    <li><strong>Data Scientists</strong> explore the data, working on models and statistics related to
+                        the data.</li>
+                    <li><strong>Product Manager Data</strong> product manager role with a major focus on data related
+                        projects</li>
+                </ul>
+
+                <h3>Other important tasks</h3>
+                <p>Some other tasks that needs to be done but can be assigned to different roles are:</p>
+                <ul>
+                    <li>FinOps, ensuring that the costs of running stays within budget</li>
+                    <li>Quality assurance</li>
+                    <li>Project management</li>
+                    <li>Access management</li>
+                    <li>Building a Data retention policy</li>
+                    <li>Security can also be the responsibility of a DevSecOps</li>
+                </ul>
+
+                <div class="note" style="background: #feffd3; padding: 1rem; border-radius: 4px; margin-top: 1rem;">
+                    <p>⚠️ <strong>Note:</strong> A common mistake is to overhire Data Scientists. A common ratio is 2 to
+                        3 DE for every DS (<a href="https://www.oreilly.com/radar/data-engineers-vs-data-scientists/"
+                            target="_blank">Source</a>) In our experience we can't go with less than 1DE for every DA or
+                        DS
+                        involved in the project.</p>
+                </div>
+
+                <p>Usually the biggest part of the data team is composed of Data Engineers and Data Analysts /
+                    Scientists.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>❄ Other related services</h2>
+            <ul>
+                <li>Data retention policy with an attorney</li>
+                <li>Data governance</li>
+                <li>Integration with other softwares</li>
+                <li>CTO for data related topics</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ in France — Hosted in 🇫🇷</p>
+        <p>&copy; 2025 Telary — All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
