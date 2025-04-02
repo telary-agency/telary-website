@@ -4,6 +4,7 @@ slug: the-tale-of-copy-into
 date_published: 2024-05-30T18:00:00.000Z
 date_updated: 2024-06-23T19:25:27.000Z
 tags: Data platforms
+layout: post
 ---
 
 Let me tell you the tale of copy into

@@ -4,6 +4,7 @@ slug: 3-steps-of-a-data-project
 date_published: 2024-03-01T19:00:00.000Z
 date_updated: 2024-06-23T20:28:22.000Z
 tags: Company news
+layout: post
 ---
 
 ## Co-create & Design

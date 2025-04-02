@@ -4,6 +4,7 @@ slug: q2-2024-retrospective
 date_published: 2024-07-02T17:46:29.000Z
 date_updated: 2024-07-02T17:46:29.000Z
 tags: Company news
+layout: post
 ---
 
 This is the end of the second quarter for Telary.

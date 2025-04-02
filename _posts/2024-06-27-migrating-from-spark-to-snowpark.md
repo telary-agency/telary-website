@@ -4,6 +4,7 @@ slug: migrating-from-spark-to-snowpark
 date_published: 2024-06-27T09:13:12.000Z
 date_updated: 2024-07-18T07:24:48.000Z
 tags: Data platforms
+layout: post
 ---
 
 💡
