@@ -2,10 +2,11 @@ title: Telary - Data made Agile
 description: Let's build your data platform
 baseurl: ""
 url: "https://telary.io"
+permalink: /:title/
 collections:
   posts:
     output: true
-permalink: /:title/
+    permalink: /posts/:title/
 
 # GitHub Pages configuration
 github: [metadata]
@@ -13,4 +14,4 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap 
+  - jekyll-sitemap
