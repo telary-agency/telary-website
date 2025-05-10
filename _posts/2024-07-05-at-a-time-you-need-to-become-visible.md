@@ -5,6 +5,7 @@ date_published: 2024-07-05T07:44:02.000Z
 date_updated: 2024-07-08T08:32:54.000Z
 tags: Data platforms
 layout: post
+image: /assets/img/banners/photo-researca-11.avif
 ---
 
 ## Introduction

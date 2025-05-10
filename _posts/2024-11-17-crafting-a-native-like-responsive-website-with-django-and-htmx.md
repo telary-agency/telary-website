@@ -5,6 +5,8 @@ date_published: 2024-11-17T21:14:13.000Z
 date_updated: 2024-11-18T13:12:39.000Z
 tags: Indie hacking
 layout: post
+image: /assets/img/banners/photo-researca-13.avif
+
 ---
 
 # Introduction

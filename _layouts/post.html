@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png" />
+    <link rel="stylesheet" href="/assets/css/style_blog.css">
 
-<body>
-    {% include header.html %}
+  </head>
+    <body>
+        {% include navbar.html %}
+        <header class="bg-purple-700 text-white py-6 text-center">
+            <h1 class="text-4xl font-bold">{{page.title}}</h1>
+        </header>
+        <main class="" style="display: flex;">
 
-    <main class="" style="display: flex;">
-
-        <!-- Table of Contents Section -->
-        <nav id="toc" style="margin: 0px; padding-left: 5px; border-right: 1px solid #ddd; flex: 0 0 15%;">
-            <h2>Table of Contents</h2>
-            <div id="toc-content"></div>
-        </nav>
-
-        <!-- Article Section -->
-        <article class="content-container" style="padding: 20px; max-width: 800px; flex: 0 0 800px;">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.date | date: "%B %d, %Y" }}</p>
-            <div>
-                {{ content }}
-            </div>
-        </article>
-    </main>
-
-    {% include footer.html %}
-
-    <!-- Include tocbot script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            tocbot.init({
-                // Where to render the table of contents.
-                tocSelector: '#toc-content',
-                // Where to grab the headings to build the table of contents.
-                contentSelector: 'article',
-                // Which headings to grab inside of the contentSelector element.
-                headingSelector: 'h1, h2, h3',
-                // For smooth scrolling
-                scrollSmooth: true,
+            <!-- Table of Contents Section -->
+            <nav id="toc" style="margin: 0px; padding-left: 5px; border-right: 1px solid #ddd; flex: 0 0 15%;">
+                <h2>Table of Contents</h2>
+                <div id="toc-content"></div>
+            </nav>
+    
+            <!-- Article Section -->
+            <article class="content-container" style="padding: 20px; max-width: 800px; flex: 0 0 800px;">
+                <p>{{ page.date | date: "%B %d, %Y" }}</p>
+                <div class="">
+                    {{ content }}
+                </div>
+            </article>
+        </main>
+    
+    
+        <!-- Include tocbot script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                tocbot.init({
+                    // Where to render the table of contents.
+                    tocSelector: '#toc-content',
+                    // Where to grab the headings to build the table of contents.
+                    contentSelector: 'article',
+                    // Which headings to grab inside of the contentSelector element.
+                    headingSelector: 'h1, h2, h3',
+                    // For smooth scrolling
+                    scrollSmooth: true,
+                });
             });
-        });
-    </script>
-</body>
+        </script>
+        {% include footer.html %}
+    </body>
 
 </html>

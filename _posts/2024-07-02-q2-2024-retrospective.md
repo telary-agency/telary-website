@@ -5,6 +5,7 @@ date_published: 2024-07-02T17:46:29.000Z
 date_updated: 2024-07-02T17:46:29.000Z
 tags: Company news
 layout: post
+image: /assets/img/banners/photo-researca-9.avif
 ---
 
 This is the end of the second quarter for Telary.

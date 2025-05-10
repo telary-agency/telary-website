@@ -4,6 +4,8 @@ slug: migrating-off-app-entreprise-search
 date_published: 2025-02-15T11:28:46.000Z
 date_updated: 2025-02-15T11:36:24.000Z
 layout: post
+image: /assets/img/banners/photo-researca-14.avif
+
 ---
 
 At the end of November 2024, [Elastic announced that there would be no further updates to App/Entreprise Search and advised users to start planning their migration away from it](https://www.elastic.co/blog/app-search-to-elasticsearch). The features are planned to be added to the base elastic products which could be beneficial since AppSearch integration was not always seamless. However, it was a useful product that allowed clients to build and customize simple search use cases. If a use case became too complex, users could transition to direct Elasticsearch querying.

@@ -4,6 +4,7 @@ slug: ai-has-changed-how-i-work
 date_published: 2025-02-26T12:04:12.000Z
 date_updated: 2025-02-26T12:08:02.000Z
 layout: post
+image: /assets/img/banners/photo-researca-16.avif
 ---
 
 I was initially skeptical about AI’s impact on programming and data engineering. However, after experimenting with it, I realized that it already plays a significant role in improving workflows, and I hope it will continue to evolve.

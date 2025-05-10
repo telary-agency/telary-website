@@ -5,6 +5,7 @@ date_published: 2024-04-30T18:00:00.000Z
 date_updated: 2024-06-23T21:15:06.000Z
 tags: Company news
 layout: post
+image: /assets/img/banners/photo-researca-3.avif
 ---
 
 It’s the end of a rich first quarter for Telary.
