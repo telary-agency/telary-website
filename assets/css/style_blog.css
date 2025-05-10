@@ -109,6 +109,33 @@ article pre {
     margin: 20px 0;
 }
 
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+article table th, article table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+article table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+article table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+article table tr:hover {
+    background-color: #f1f1f1;
+}
+
 #toc {
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -120,8 +147,22 @@ article pre {
 }
 
 #toc-content {
-    list-style: none;
-    padding-left: 0;
+    list-style: disc; /* Add list markers */
+    padding-left: 20px; /* Indent for better readability */
+}
+
+#toc-content li {
+    margin-bottom: 5px; /* Add spacing between list items */
+}
+
+.node-name--H2 {
+    margin-left: 20px; /* Indent H2 items */
+    list-style-type: circle; /* Use a different marker for H2 */
+}
+
+.node-name--H3 {
+    margin-left: 40px; /* Indent H3 items */
+    list-style-type: square; /* Use a different marker for H3 */
 }
 
 #toc-content a {
