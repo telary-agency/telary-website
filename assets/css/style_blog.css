@@ -38,7 +38,75 @@ article img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+article h1 {
+    font-size: 2.5em;
+}
+
+article h2 {
+    font-size: 2em;
+} 
+
+article p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+article blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #ddd;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+article ul, article ol {
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+article ul li, article ol li {
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #6b46c1;
+    text-decoration: underline;
+}
+
+article a:hover {
+    color: #4c2882;
+    text-decoration: none;
+}
+
+article code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+}
+
+article pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+    margin: 20px 0;
 }
 
 #toc {
