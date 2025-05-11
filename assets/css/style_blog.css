@@ -72,13 +72,20 @@ article blockquote {
     margin: 20px 0;
 }
 
-article ul, article ol {
-    margin: 20px 0;
-    padding-left: 40px;
+article ul {
+    list-style-type: disc; /* Add bullet points */
+    padding-left: 20px; /* Indent for better readability */
+    color: #555; /* Match the text color */
+}
+
+article ol {
+    list-style-type: decimal; /* Add numbered list style */
+    padding-left: 20px; /* Indent for better readability */
+    color: #555; /* Match the text color */
 }
 
 article ul li, article ol li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add spacing between list items */
 }
 
 article a {
