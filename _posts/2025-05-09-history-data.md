@@ -68,3 +68,40 @@ I was looking to hire and train a sales team so I decided to write this first po
 	* (**Azure**) Microsoft Fabric
 	* AI becomes LLMs and is API-ized
 
+Understanding the evolution of data is crucial for grasping the modern data landscape. Here's a concise history:
+
+## Early Days (<1970/1980)
+- Databases began as simple files storing data, with indexing for faster retrieval.
+- Specialized software, called Database Management Systems (DBMS), emerged to manage multiple tables and queries.
+- In-memory databases appeared, storing data in RAM for speed but lacking persistence.
+- Database servers could manage multiple databases and tables.
+- SQL became the standard query language, though dialects vary.
+- Indexes, essentially metadata tables, improved retrieval efficiency.
+- Known as SGBD in French (Système de gestion de base de données).
+
+## Relational Databases (1970/1980)
+- Introduced structured data storage with relationships between tables.
+- Normalization defined best practices for organizing data.
+- SQL became the standard for querying relational databases.
+- Object-Relational Mapping (ORM) tools abstracted database interactions but didn't replace SQL.
+
+## Business Intelligence (1990/2000)
+- BI focused on improving decision-making with reporting, KPIs, dashboards, and analytics.
+- Dimensional modeling, popularized by Kimball, simplified data representation for business use.
+
+## Big Data Era (2010/2020)
+- Companies generated data at scales too large for single servers.
+- Distributed computing frameworks like MapReduce and Spark emerged.
+  - Tasks like finding unique values or sorting were split across server clusters.
+- CAP theorem highlighted trade-offs between consistency, availability, and partition tolerance.
+- Big data's complexity limited its adoption for smaller-scale use cases.
+
+## Modern Trends (2020+)
+- Big data matured, and focus shifted to AI and data aggregation.
+- Cloud platforms like AWS (Glue, Athena), GCP (BigQuery), and Azure (Data Factory) simplified workflows.
+- AI evolved into Large Language Models (LLMs), accessible via APIs.
+- Data engineering became a distinct profession.
+- Companies like Snowflake and Databricks achieved massive valuations.
+- AI and data aggregation replaced big data as the primary focus.
+
+From simple files to AI-driven insights, the history of data reflects humanity's quest to harness information for better decision-making.
