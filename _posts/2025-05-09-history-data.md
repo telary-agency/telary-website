@@ -7,10 +7,6 @@ layout: post
 image: /assets/img/banners/photo-researca-18.avif
 ---
 
-I was looking to hire and train a sales team, so I decided to write this first post. It's part of a series on the basics of data. This way, my sales team will have a deep understanding of what we're selling.
-
-I took some shortcuts to focus on the most important topics for my business.
-
 # Early Days (<1970/1980)
 
 Databases began as simple files storing data. This had some limitations, and as the usage of technology grew, an alternative started to emerge.
