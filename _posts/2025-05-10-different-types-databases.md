@@ -4,6 +4,7 @@ slug: different-types-of-databases
 date_published: 2025-05-10T12:04:12.000Z
 date_updated: 2025-05-10T12:08:02.000Z
 image: /assets/img/banners/photo-researca-17.avif
+layout: post
 ---
 
 This article is the second of a several part aimed to let sales and marketing colleagues hired catch up on the data landscape and ecosystem. For each technology I will highlight what existed before, by whom it was created and to solve which painpoints.
@@ -29,13 +30,8 @@ NoSQL databases are often very fast, do not require fixed table schemas, avoid j
 
 In recent years, there has been a strong demand for massively distributed databases with high partition tolerance, but according to the CAP theorem, it is impossible for a distributed system to simultaneously provide consistency, availability, and partition tolerance guarantees. A distributed system can satisfy any two of these guarantees at the same time, but not all three. For that reason, many NoSQL databases are using what is called eventual consistency to provide both availability and partition tolerance guarantees with a reduced level of data consistency. 
 
-NewSQL is a class of modern relational databases that aims to provide the same scalable performance of NoSQL systems for online transaction processing (read-write) workloads while still using SQL and maintaining the ACID guarantees of a traditional database system. 
+NewSQL is a class of modern relational databases that aims to provide the same scalable performance of NoSQL systems for online transaction processing (read-write) workloads while still using SQL and maintaining the [ACID](#acid) guarantees of a traditional database system. 
 
-
-| **Creator**       |                                                  |
-| **Reason**        |                                                     |
-| **Use Case**      |     |
-| **Comon example** |         |
 
 # Example of database catagories
 
@@ -44,11 +40,6 @@ Note that those different types of categories can be combined and for example mo
 ## In memory database
 
 An in-memory database is a database that primarily resides in main memory, but is typically backed-up by non-volatile computer data storage. Main memory databases are faster than disk databases, and so are often used where response time is critical, such as in telecommunications network equipment. The tradeoff is tha t you can't store that much data in memory.
-
-| **Creator**       |                                                  |
-| **Reason**        |                                                     |
-| **Use Case**      |     |
-| **Comon example** |         |
 
 ## Data Warehouses
 
@@ -74,16 +65,28 @@ A federated database system comprises several distinct databases, each with its 
 
 A graph database is a kind of NoSQL database that uses graph structures with nodes, edges, and properties to represent and store information. General graph databases that can store any graph are distinct from specialized graph databases such as triplestores and network databases.
 
-*** add about llms***
-
 ## Key Value
 
+A key-value database is a type of non-relational database, also known as NoSQL database, that uses a simple key-value method to store data. It stores data as a collection of key-value pairs in which a key serves as a unique identifier. Both keys and values can be anything, ranging from simple objects to complex compound objects. Key-value databases (or key-value stores) are highly partitionable and allow horizontal scaling at a level that other types of databases cannot achieve.
+
+The strong point for this kind of database is the speed of data retrieval.
+
 ## Column oriented database
+
+Tabular data is two dimensional — data is modeled as rows and columns. However, computer systems represent data in a linear memory model, both in-disk and in-memory. Therefore, a table in a linear memory model requires mapping its two-dimensional scheme into a one-dimensional space. Data orientation is to the decision taken in this mapping. There are two prominent mappings: row-oriented and column-oriented.
+
+Being column oriented is a common feature of most of the data warehouses use because it greatly improve the scalability.
 
 ![](/assets/img/2025/05/column_store.png)
 *Difference between column storage and standard storage*
 
 ## Vector database
+
+A vector database, vector store or vector search engine is a database that can store vectors (fixed-length lists of numbers) along with other data items. Vector databases typically implement one or more Approximate Nearest Neighbor algorithms, so that one can search the database with a query vector to retrieve the closest matching database records.
+
+Vector databases can be used for similarity search, semantic search, multi-modal search, recommendations engines, large language models (LLMs), object detection, etc.
+
+Vector databases are also often used to implement retrieval-augmented generation (RAG), a method to improve domain-specific responses of large language models.
 
 ## Operational database
 
@@ -105,10 +108,16 @@ A temporal database has built-in time aspects, for example a temporal data model
 
 ## ACID
 
+ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. In the context of databases, a sequence of database operations that satisfies the ACID properties (which can be perceived as a single logical operation on the data) is called a transaction.
+
 ## OLAP
 
+Online analytical processing : Databases configured for OLAP use a multidimensional data model, allowing for complex analytical and ad hoc queries with a rapid execution time.
 
-    L’OLTP consiste à utiliser la base de données pour faire tourner votre business.
-    L’OLAP consiste à utiliser la base de données pour comprendre votre business.
+> OLAP is used to help you understand your business
 
 ## OLTP
+
+Online transaction processing (OLTP) is a type of database system used in transaction-oriented applications, such as many operational systems. "Online" refers to the fact that such systems are expected to respond to user requests and process them in real-time (process transactions)
+
+> OLTP is used directly for your business
