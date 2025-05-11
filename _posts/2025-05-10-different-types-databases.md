@@ -3,7 +3,6 @@ title: The different types of databases
 slug: different-types-of-databases
 date_published: 2025-05-10T12:04:12.000Z
 date_updated: 2025-05-10T12:08:02.000Z
-layout: post
 image: /assets/img/banners/photo-researca-17.avif
 ---
 
@@ -65,7 +64,7 @@ A document-oriented database is designed for storing, retrieving, and managing d
 
 ## Embeded database
 
-An embedded database system is a DBMS which is tightly integrated with an application software that requires access to stored data in such a way that the DBMS is hidden from the application's end-users and requires little or no ongoing maintenance.[21]
+An embedded database system is a DBMS which is tightly integrated with an application software that requires access to stored data in such a way that the DBMS is hidden from the application's end-users and requires little or no ongoing maintenance.
 
 ## Federated database system
 
@@ -80,6 +79,9 @@ A graph database is a kind of NoSQL database that uses graph structures with nod
 ## Key Value
 
 ## Column oriented database
+
+![](/assets/img/2025/05/column_store.png)
+*Difference between column storage and standard storage*
 
 ## Vector database
 
@@ -98,3 +100,15 @@ A spatial database can store the data with multidimensional features. The querie
 ## Temporal
 
 A temporal database has built-in time aspects, for example a temporal data model and a temporal version of SQL. More specifically the temporal aspects usually include valid-time and transaction-time
+
+# Glossary
+
+## ACID
+
+## OLAP
+
+
+    L’OLTP consiste à utiliser la base de données pour faire tourner votre business.
+    L’OLAP consiste à utiliser la base de données pour comprendre votre business.
+
+## OLTP
