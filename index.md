@@ -67,7 +67,7 @@ title: Telary - Data made Agile
      <section class="bg-white py-20 px-6">
         <div class="max-w-5xl mx-auto text-center">
           <h2 class="text-3xl font-bold mb-10 text-purple-800">Pourquoi nous choisir ?</h2>
-          <p class="text-lg text-gray-600 mb-8">Économisez jusqu’à <strong>100 000€/an</strong> par rapport à une équipe data interne.</p>
+          <p class="text-lg text-gray-600 mb-8">Économisez jusqu’à <strong>100 000€/an</strong> par rapport à construire votre propre plateforme.</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             <div class="bg-gray-50 p-6 rounded-xl shadow border-t-4 border-purple-600">
               <h3 class="text-xl font-semibold mb-4">👩‍💻 Équipe Data Interne</h3>
