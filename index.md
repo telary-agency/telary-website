@@ -8,10 +8,10 @@ title: Telary - Data made Agile
     <section class="bg-white py-20 px-6 text-center shadow-md">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
-          Votre data platform, dès 1200€/mois
+          Exploitez (enfin) vos données
         </h1>
         <p class="text-xl text-gray-600 mb-6">
-          Une data platform clé en main, maintenue, 100% open source.
+          Une data platform clé en main, managée, 100% open source.
         </p>
         <a href="#dashboard" class="bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
           Découvrir le produit
@@ -83,7 +83,7 @@ title: Telary - Data made Agile
               <h3 class="text-xl font-semibold mb-4">🚀 Notre plateforme</h3>
               <ul class="space-y-2 text-gray-800">
                 <li>• Plateforme prête à l'emploi</li>
-                <li>• Déploiement en 3 jours</li>
+                <li>• Déploiement en 24h</li>
                 <li>• Maintenance incluse (SLA 5j/7)</li>
                 <li>• Support humain</li>
                 <li class="font-bold mt-2">✅ À partir de 14 400€/an</li>
@@ -165,8 +165,8 @@ title: Telary - Data made Agile
 
     <!-- Call to Action -->
     <section class="bg-purple-700 text-white py-16 text-center">
-      <h2 class="text-3xl font-bold mb-4">Prêt à prendre le contrôle de vos données ?</h2>
-      <p class="mb-6 text-lg">Réservez un audit gratuit pour découvrir comment nous pouvons vous aider.</p>
+      <h2 class="text-3xl font-bold mb-4">Vous voulez enfin exploiter vos données ?</h2>
+      <p class="mb-6 text-lg">Contactez nous pour découvrir comment nous pouvons vous aider.</p>
       <a href="mailto:contact@votredata.fr" class="bg-white text-purple-700 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">
         Contactez-nous
       </a>
