@@ -8,14 +8,57 @@ title: Telary - Data made Agile
     <section class="bg-white py-20 px-6 text-center shadow-md">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
-          Exploitez (enfin) vos données
+          Transformez (simplement) vos données en levier de croissance.
         </h1>
         <p class="text-xl text-gray-600 mb-6">
-          Une data platform clé en main, managée, 100% open source.
+          Une data platform clé en main, managée, 100% open source et déployée en 24h.
         </p>
         <a href="#dashboard" class="bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
           Découvrir le produit
         </a>
+      </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="bg-gray-50 py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8 text-purple-800">
+          Sans data platform, vos données sont un poids, pas un atout.
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Les problèmes courants</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-red-500 mr-2">❌</span>
+                <span>Fichiers Excel dispersés, reporting manuel</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-2">❌</span>
+                <span>Pas de vision claire sur les ventes, les stocks ou les coûts</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-2">❌</span>
+                <span>Impossible de croiser les données CRM, e-commerce, marketing et de vos applicatifs</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-500 mr-2">❌</span>
+                <span>Les équipes perdent du temps à chercher, nettoyer, comprendre</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-purple-50 p-6 rounded-xl shadow border-t-4 border-purple-600">
+            <h3 class="text-xl font-semibold mb-4 text-purple-800">La solution Telary</h3>
+            <p class="text-gray-700 mb-4">
+              👉 Telary vous aide à structurer, centraliser et exploiter vos données sans recruter une équipe technique.
+            </p>
+            <div class="text-center">
+              <a href="#dashboard" class="inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
+                Découvrir la solution
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -53,7 +96,7 @@ title: Telary - Data made Agile
           </a>
         </div>
         <a href="usecases" class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
-          Découvrir tous les usages
+          Apprenez en plus sur ce que vous pourrez faire avec Telary
         </a>
       </div>
     </section>
@@ -67,7 +110,7 @@ title: Telary - Data made Agile
      <section class="bg-white py-20 px-6">
         <div class="max-w-5xl mx-auto text-center">
           <h2 class="text-3xl font-bold mb-10 text-purple-800">Pourquoi nous choisir ?</h2>
-          <p class="text-lg text-gray-600 mb-8">Économisez jusqu’à <strong>100 000€/an</strong> par rapport à construire votre propre plateforme.</p>
+          <p class="text-lg text-gray-600 mb-8">Économisez jusqu'à <strong>100 000€/an</strong> par rapport à construire votre propre plateforme.</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             <div class="bg-gray-50 p-6 rounded-xl shadow border-t-4 border-purple-600">
               <h3 class="text-xl font-semibold mb-4">👩‍💻 Équipe Data Interne</h3>
