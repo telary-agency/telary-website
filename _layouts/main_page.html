@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ site.title }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png" />
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const scrollToAnchor = (event) => {
-          event.preventDefault();
-          const targetId = event.currentTarget.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-          }
-        };
 
-        const link = document.querySelector('a[href="#dashboard"]');
-        if (link) {
-          link.addEventListener('click', scrollToAnchor);
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png" />
+  <link rel="stylesheet" href="{{ '/assets/css/patterns.css' | relative_url }}" />
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollToAnchor = (event) => {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
         }
-      });
-    </script>
-  </head>
-    <body>
-        {% include navbar.html %}
-        {{ content }}
-        {% include footer.html %}
-    </body>
+      };
+
+      const link = document.querySelector('a[href="#dashboard"]');
+      if (link) {
+        link.addEventListener('click', scrollToAnchor);
+      }
+    });
+  </script>
+</head>
+
+<body>
+  {% include navbar.html %}
+  {{ content }}
+  {% include footer.html %}
+</body>
 
 </html>

@@ -5,7 +5,7 @@ title: Telary - Data made Agile
 
   <body class="bg-gray-50 text-gray-900 font-sans">
     <!-- Hero -->
-    <section class="bg-white py-20 px-6 text-center shadow-md">
+    <section class="bg-white py-20 px-6 text-center shadow-md textured-section-hero">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
           Transformez (simplement) vos données en levier de croissance.
@@ -63,7 +63,7 @@ title: Telary - Data made Agile
     </section>
 
     <!-- À qui s'adresse l'offre -->
-    <section class="py-20 px-6 bg-gray-100">
+    <section class="py-20 px-6 bg-gray-100 textured-section">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-6 text-purple-800">Conçue pour les startups et PME ambitieuses</h2>
         <p class="text-lg text-gray-600 mb-8">
@@ -107,7 +107,7 @@ title: Telary - Data made Agile
     </section>
 
      <!-- Comparatif économique -->
-     <section class="bg-white py-20 px-6">
+     <section class="bg-white py-20 px-6 textured-section">
         <div class="max-w-5xl mx-auto text-center">
           <h2 class="text-3xl font-bold mb-10 text-purple-800">Pourquoi nous choisir ?</h2>
           <p class="text-lg text-gray-600 mb-8">Économisez jusqu'à <strong>100 000€/an</strong> par rapport à construire votre propre plateforme.</p>

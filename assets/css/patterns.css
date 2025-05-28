@@ -1,0 +1,35 @@
+/*.textured-section {
+    background-image: url('../img/bg_dot.svg');
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.textured-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/bg_dot.svg');
+    background-size: auto;
+    background-repeat: repeat;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: -1;
+}*/
+
+.textured-section-hero {
+    z-index: 0;
+    mix-blend-mode: normal;
+    background-image: url(../img/bg-square.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    inset: -17px 0% 0%;
+}
