@@ -13,7 +13,7 @@ title: Telary - Data made Agile
         <p class="text-xl text-gray-600 mb-6">
           Une data platform clé en main, managée, 100% open source et déployée en 24h.
         </p>
-        <a href="#dashboard" class="bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
+        <a href="#dashboard" class="bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
           Découvrir le produit
         </a>
       </div>
@@ -22,7 +22,7 @@ title: Telary - Data made Agile
     <!-- Challenges Section -->
     <section class="bg-gray-50 py-20 px-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-8 text-purple-800">
+        <h2 class="text-3xl font-bold text-center mb-8 text-purple-700">
           Sans data platform, vos données sont un poids, pas un atout.
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -47,13 +47,13 @@ title: Telary - Data made Agile
               </li>
             </ul>
           </div>
-          <div class="bg-purple-50 p-6 rounded-xl shadow border-t-4 border-purple-600">
-            <h3 class="text-xl font-semibold mb-4 text-purple-800">La solution Telary</h3>
+          <div class="bg-purple-50 p-6 rounded-xl shadow border-t-4 border-purple-700">
+            <h3 class="text-xl font-semibold mb-4 text-purple-700">La solution Telary</h3>
             <p class="text-gray-700 mb-4">
               👉 Telary vous aide à structurer, centraliser et exploiter vos données sans recruter une équipe technique.
             </p>
             <div class="text-center">
-              <a href="#dashboard" class="inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
+              <a href="#dashboard" class="inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
                 Découvrir la solution
               </a>
             </div>
@@ -65,7 +65,7 @@ title: Telary - Data made Agile
     <!-- À qui s'adresse l'offre -->
     <section class="py-20 px-6 bg-gray-100 textured-section">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6 text-purple-800">Conçue pour les startups et PME ambitieuses</h2>
+        <h2 class="text-3xl font-bold mb-6 text-purple-700">Conçue pour les startups et PME ambitieuses</h2>
         <p class="text-lg text-gray-600 mb-8">
           Notre plateforme est pensée pour les entreprises qui veulent tirer parti de leurs données sans embaucher une équipe dédiée.
         </p>
@@ -95,7 +95,7 @@ title: Telary - Data made Agile
           </div>
           </a>
         </div>
-        <a href="usecases" class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
+        <a href="usecases" class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
           Apprenez en plus sur ce que vous pourrez faire avec Telary
         </a>
       </div>
@@ -109,10 +109,10 @@ title: Telary - Data made Agile
      <!-- Comparatif économique -->
      <section class="bg-white py-20 px-6 textured-section">
         <div class="max-w-5xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-10 text-purple-800">Pourquoi nous choisir ?</h2>
+          <h2 class="text-3xl font-bold mb-10 text-purple-700">Pourquoi nous choisir ?</h2>
           <p class="text-lg text-gray-600 mb-8">Économisez jusqu'à <strong>100 000€/an</strong> par rapport à construire votre propre plateforme.</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <div class="bg-gray-50 p-6 rounded-xl shadow border-t-4 border-purple-600">
+            <div class="bg-gray-50 p-6 rounded-xl shadow border-t-4 border-purple-700">
               <h3 class="text-xl font-semibold mb-4">👩‍💻 Équipe Data Interne</h3>
               <ul class="space-y-2 text-gray-700">
                 <li>• 1 Data Engineer confirmé : 50 000€/an</li>
@@ -139,7 +139,7 @@ title: Telary - Data made Agile
     <!-- Aperçu du Dashboard intégré dans une fenêtre de navigateur -->
     <section id="dashboard" class="bg-gray-100 py-20 px-6">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 text-center text-purple-800">Aperçu du Dashboard</h2>
+        <h2 class="text-3xl font-bold mb-10 text-center text-purple-700">Aperçu du Dashboard</h2>
         <p class="text-lg text-gray-600 mb-8 text-center">C'est interactif, cliquez sur les rubriques, en cliquant sur Data Platform vous revenez au dashboard</p>
         <div class="rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white">
           <!-- Simulated browser top bar -->
@@ -159,13 +159,13 @@ title: Telary - Data made Agile
     <!-- Success Stories & Clients -->
     <section class="bg-white py-20 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-purple-800">Ils nous font déjà confiance</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-purple-700">Ils nous font déjà confiance</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Client 1 -->
               <div class="bg-gray-50 rounded-xl shadow p-6">
                 <a href="./cas/teletravail.guru">
                   <h3 class="text-xl font-semibold text-purple-700 mb-2">💻 Télétravail.guru
-                    <p class="text-sm font-normal text-purple-800 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
+                    <p class="text-sm font-normal text-purple-700 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
                       Voir cas client
                     </p>
                   </h3>
@@ -179,7 +179,7 @@ title: Telary - Data made Agile
             <div class="bg-gray-50 rounded-xl shadow p-6">
               <a href="./cas/joezz.com">
                 <h3 class="text-xl font-semibold text-purple-700 mb-2">🚀 Joezz
-                  <p class="text-sm font-normal text-purple-800 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
+                  <p class="text-sm font-normal text-purple-700 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
                     Voir cas client
                   </p>
                 </h3>
@@ -193,7 +193,7 @@ title: Telary - Data made Agile
             <div class="bg-gray-50 rounded-xl shadow p-6">
               <a href="./cas/researca.com">
                 <h3 class="text-xl font-semibold text-purple-700 mb-2">📰 Researca
-                  <p class="text-sm font-normal text-purple-800 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
+                  <p class="text-sm font-normal text-purple-700 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
                     Voir cas client
                   </p>
                 </h3>

@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Data Platform</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .status-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 9999px;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 text-gray-900 font-sans">
-    <!-- Top Navigation Bar -->
-    <header class="bg-white shadow p-4 flex items-center justify-between">
-      <div class="text-2xl font-semibold text-purple-700">Data Platform</div>
-      <div class="flex items-center space-x-6">
-        <!-- Status Indicators -->
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Notebooks</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Storage</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Orchestrator</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">System</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Data Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Top Navigation Bar -->
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <div class="text-2xl font-semibold text-purple-700">Data Platform</div>
+    <div class="flex items-center space-x-6">
+      <!-- Status Indicators -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Notebooks</span>
         </div>
-        <!-- User Info -->
-        <div class="flex items-center space-x-2">
-          <div class="text-sm text-gray-800">Bienvenue, <strong>Constant</strong></div>
-          <img src="https://ui-avatars.com/api/?name=DA&background=7e22ce&color=fff" class="w-8 h-8 rounded-full" alt="avatar">
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Storage</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Orchestrator</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">System</span>
         </div>
       </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="p-4">
-      <h1 class="text-3xl font-bold mb-8 text-purple-800">Votre Espace Data</h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Card: Notebooks -->
-        <a href="./dashboard/jupyter.html">
-          <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-600">
-            <h2 class="text-xl font-semibold mb-2 text-purple-700">Notebooks</h2>
-            <p class="text-gray-600">Développez et testez vos scripts data en toute liberté.</p>
-          </div>
-        </a>
-        <!-- Card: Storage -->
-        <a href="./dashboard/storage.html">
-          <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-600">
-            <h2 class="text-xl font-semibold mb-2 text-purple-700">Stockage</h2>
-            <p class="text-gray-600">Gérez et explorez vos données stockées (PostgreSQL, DuckDB...).</p>
-          </div>
-        </a>
-        <!-- Card: Orchestrator -->
-        <a href="./dashboard/airflow.html">
-          <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-600">
-            <h2 class="text-xl font-semibold mb-2 text-purple-700">Orchestration</h2>
-            <p class="text-gray-600">Planifiez et suivez vos pipelines de données.</p>
-          </div>
-        </a>
-        <!-- Card: Système -->
-        <a href="./dashboard/ingestion.html">
-          <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-600">
-            <h2 class="text-xl font-semibold mb-2 text-purple-700">Ingestion</h2>
-            <p class="text-gray-600">Suivre la donnée ingéré dans la data platform.</p>
-          </div>
-        </a>
-        <!-- Card: Monitoring -->
-        <a href="./dashboard/monitoring.html">
-          <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-600">
-            <h2 class="text-xl font-semibold mb-2 text-purple-700">Monitoring & Accès</h2>
-            <p class="text-gray-600">Managez les accès, les droits et surveillez les logs.</p>
-          </div>
-        </a>
-        <!-- Card: Support -->
-        <a href="./dashboard/data.html">
-          <div class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-600">
-            <h2 class="text-xl font-semibold mb-2 text-purple-700">Data & Dashboards</h2>
-            <p class="text-gray-600">Explorez vos données, faites des dashboards et du cataloging</p>
-          </div>
-        </a>
+      <!-- User Info -->
+      <div class="flex items-center space-x-2">
+        <div class="text-sm text-gray-800">Bienvenue, <strong>Constant</strong></div>
+        <img src="https://ui-avatars.com/api/?name=DA&background=7e22ce&color=fff" class="w-8 h-8 rounded-full"
+          alt="avatar">
       </div>
+    </div>
+  </header>
 
-      <!-- Last Jobs Section -->
-      <div class="mt-12">
-        <h2 class="text-2xl font-semibold mb-4 text-purple-800">Derniers jobs exécutés</h2>
-        <ul class="bg-white p-4 rounded-xl shadow divide-y divide-gray-100 text-sm">
-          <li class="py-2">✅ <strong>daily_etl</strong> - Succès à 07:14</li>
-          <li class="py-2">✅ <strong>update_sales_metrics</strong> - Succès à 06:58</li>
-          <li class="py-2">⚠️ <strong>sync_crm</strong> - Échec à 06:32</li>
-        </ul>
-      </div>
-    </main>
+  <!-- Main Content -->
+  <main class="p-4">
+    <h1 class="text-3xl font-bold mb-8 text-purple-700">Votre Espace Data</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card: Notebooks -->
+      <a href="./dashboard/jupyter.html">
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-700">
+          <h2 class="text-xl font-semibold mb-2 text-purple-700">Notebooks</h2>
+          <p class="text-gray-600">Développez et testez vos scripts data en toute liberté.</p>
+        </div>
+      </a>
+      <!-- Card: Storage -->
+      <a href="./dashboard/storage.html">
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-700">
+          <h2 class="text-xl font-semibold mb-2 text-purple-700">Stockage</h2>
+          <p class="text-gray-600">Gérez et explorez vos données stockées (PostgreSQL, DuckDB...).</p>
+        </div>
+      </a>
+      <!-- Card: Orchestrator -->
+      <a href="./dashboard/airflow.html">
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-700">
+          <h2 class="text-xl font-semibold mb-2 text-purple-700">Orchestration</h2>
+          <p class="text-gray-600">Planifiez et suivez vos pipelines de données.</p>
+        </div>
+      </a>
+      <!-- Card: Système -->
+      <a href="./dashboard/ingestion.html">
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-700">
+          <h2 class="text-xl font-semibold mb-2 text-purple-700">Ingestion</h2>
+          <p class="text-gray-600">Suivre la donnée ingéré dans la data platform.</p>
+        </div>
+      </a>
+      <!-- Card: Monitoring -->
+      <a href="./dashboard/monitoring.html">
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-700">
+          <h2 class="text-xl font-semibold mb-2 text-purple-700">Monitoring & Accès</h2>
+          <p class="text-gray-600">Managez les accès, les droits et surveillez les logs.</p>
+        </div>
+      </a>
+      <!-- Card: Support -->
+      <a href="./dashboard/data.html">
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-lg p-6 cursor-pointer transition-all border-t-4 border-purple-700">
+          <h2 class="text-xl font-semibold mb-2 text-purple-700">Data & Dashboards</h2>
+          <p class="text-gray-600">Explorez vos données, faites des dashboards et du cataloging</p>
+        </div>
+      </a>
+    </div>
 
-    <script>
-      // Simulation de mise à jour des statuts
-      setInterval(() => {
-        const dots = document.querySelectorAll('.status-dot');
-        dots.forEach(dot => {
-          dot.classList.add('bg-green-500');
-        });
-      }, 5000);
-    </script>
-  </body>
+    <!-- Last Jobs Section -->
+    <div class="mt-12">
+      <h2 class="text-2xl font-semibold mb-4 text-purple-700">Derniers jobs exécutés</h2>
+      <ul class="bg-white p-4 rounded-xl shadow divide-y divide-gray-100 text-sm">
+        <li class="py-2">✅ <strong>daily_etl</strong> - Succès à 07:14</li>
+        <li class="py-2">✅ <strong>update_sales_metrics</strong> - Succès à 06:58</li>
+        <li class="py-2">⚠️ <strong>sync_crm</strong> - Échec à 06:32</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    // Simulation de mise à jour des statuts
+    setInterval(() => {
+      const dots = document.querySelectorAll('.status-dot');
+      dots.forEach(dot => {
+        dot.classList.add('bg-green-500');
+      });
+    }, 5000);
+  </script>
+</body>
+
 </html>

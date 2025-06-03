@@ -11,17 +11,17 @@ title: Telary - Data made Agile
     <!-- Case Study Content -->
     <section class="py-20 px-6 bg-white">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold text-purple-800 mb-6">Contexte</h2>
+        <h2 class="text-2xl font-bold text-purple-700 mb-6">Contexte</h2>
         <p class="text-lg text-gray-600 mb-8">
           Researca est une plateforme spécialisée dans l'analyse d'articles de presse. Elle collecte et stocke des centaines de milliers d'articles chaque jour pour les rendre accessibles à ses utilisateurs.
         </p>
 
-        <h2 class="text-2xl font-bold text-purple-800 mb-6">Défi</h2>
+        <h2 class="text-2xl font-bold text-purple-700 mb-6">Défi</h2>
         <p class="text-lg text-gray-600 mb-8">
           Avec un flux constant d'articles à ingérer et analyser, Researca avait besoin d'une solution capable de gérer des volumes importants de données tout en garantissant une disponibilité élevée.
         </p>
 
-        <h2 class="text-2xl font-bold text-purple-800 mb-6">Solution</h2>
+        <h2 class="text-2xl font-bold text-purple-700 mb-6">Solution</h2>
         <p class="text-lg text-gray-600 mb-8">
           En utilisant la plateforme Telary, Researca a pu :
         </p>
@@ -31,7 +31,7 @@ title: Telary - Data made Agile
           <li>Assurer une disponibilité continue pour ses utilisateurs.</li>
         </ul>
 
-        <h2 class="text-2xl font-bold text-purple-800 mb-6">Résultats</h2>
+        <h2 class="text-2xl font-bold text-purple-700 mb-6">Résultats</h2>
         <p class="text-lg text-gray-600 mb-8">
           Grâce à Telary, Researca a pu augmenter sa capacité de traitement tout en réduisant ses coûts opérationnels. La plateforme est désormais capable de gérer des volumes croissants de données sans compromettre la qualité du service.
         </p>

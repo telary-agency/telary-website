@@ -16,7 +16,7 @@ title: Telary - Data made Agile
     <!-- Comparison Table -->
     <section class="py-10 px-6">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-6 text-purple-800">Comparatif des outils utilisés</h2>
+        <h2 class="text-2xl font-bold text-center mb-6 text-purple-700">Comparatif des outils utilisés</h2>
         <div class="overflow-x-auto">
           <table class="table-auto w-full border-collapse border border-gray-200">
             <thead>

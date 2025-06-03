@@ -1,113 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Storage Management</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@heroicons/react/outline"></script>
-    <style>
-      .status-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 9999px;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 text-gray-900 font-sans">
-    <!-- Header -->
-    <header class="bg-white shadow p-4 flex items-center justify-between">
-      <a href="../dashboard.html"><div class="text-2xl font-semibold text-purple-700">Data Platform</div></a>
-      <div class="flex items-center space-x-6">
-        <!-- Status Indicators -->
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Notebooks</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Storage</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Orchestrator</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">System</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storage Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@heroicons/react/outline"></script>
+  <style>
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <a href="../dashboard.html">
+      <div class="text-2xl font-semibold text-purple-700">Data Platform</div>
+    </a>
+    <div class="flex items-center space-x-6">
+      <!-- Status Indicators -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Notebooks</span>
         </div>
-        <!-- User Info -->
-        <div class="flex items-center space-x-2">
-          <div class="text-sm text-gray-800">Bienvenue, <strong>Constant</strong></div>
-          <img src="https://ui-avatars.com/api/?name=DA&background=7e22ce&color=fff" class="w-8 h-8 rounded-full" alt="avatar">
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Storage</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Orchestrator</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">System</span>
         </div>
       </div>
-    </header>
+      <!-- User Info -->
+      <div class="flex items-center space-x-2">
+        <div class="text-sm text-gray-800">Bienvenue, <strong>Constant</strong></div>
+        <img src="https://ui-avatars.com/api/?name=DA&background=7e22ce&color=fff" class="w-8 h-8 rounded-full"
+          alt="avatar">
+      </div>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="p-6">
-        <h1 class="text-3xl font-bold text-purple-800 mb-6">Monitoring & Accès</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h2 class="font-semibold text-lg text-purple-700 mb-2">Utilisateurs</h2>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>👤 julie@client.com — accès : Notebooks, Storage</li>
-              <li>👤 admin@entreprise.fr — accès complet</li>
-              <li>👤 support@telary.io — lecture seule</li>
-            </ul>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h2 class="font-semibold text-lg text-purple-700 mb-2">Historique des connexions</h2>
-            <ul class="text-sm text-gray-700 space-y-1">
-              <li>✅ julie@client.com — 07:15 (depuis France)</li>
-              <li>✅ admin@entreprise.fr — 06:58 (depuis VPN)</li>
-              <li>⚠️ tentative échouée — IP inconnue</li>
-            </ul>
-          </div>
-        </div>
-      </main>
+  <!-- Main Content -->
+  <main class="p-6">
+    <h1 class="text-3xl font-bold text-purple-700 mb-6">Monitoring & Accès</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="font-semibold text-lg text-purple-700 mb-2">Utilisateurs</h2>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>👤 julie@client.com — accès : Notebooks, Storage</li>
+          <li>👤 admin@entreprise.fr — accès complet</li>
+          <li>👤 support@telary.io — lecture seule</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="font-semibold text-lg text-purple-700 mb-2">Historique des connexions</h2>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>✅ julie@client.com — 07:15 (depuis France)</li>
+          <li>✅ admin@entreprise.fr — 06:58 (depuis VPN)</li>
+          <li>⚠️ tentative échouée — IP inconnue</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
-      <main class="p-6">
-        <h1 class="text-3xl font-bold text-purple-800 mb-6">État de la Plateforme</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h2 class="font-semibold text-lg text-purple-700 mb-2">Infrastructure</h2>
-            <ul class="space-y-1 text-sm text-gray-700">
-              <li>✅ Airflow en ligne</li>
-              <li>✅ PostgreSQL connecté</li>
-              <li>✅ Stockage opérationnel</li>
-            </ul>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h2 class="font-semibold text-lg text-purple-700 mb-2">Utilisation récente</h2>
-            <ul class="space-y-1 text-sm text-gray-700">
-              <li>📈 12 jobs exécutés aujourd’hui</li>
-              <li>🧪 4 notebooks ouverts cette semaine</li>
-              <li>🔄 98% de disponibilité sur 30 jours</li>
-            </ul>
-          </div>
-        </div>
+  <main class="p-6">
+    <h1 class="text-3xl font-bold text-purple-700 mb-6">État de la Plateforme</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="font-semibold text-lg text-purple-700 mb-2">Infrastructure</h2>
+        <ul class="space-y-1 text-sm text-gray-700">
+          <li>✅ Airflow en ligne</li>
+          <li>✅ PostgreSQL connecté</li>
+          <li>✅ Stockage opérationnel</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="font-semibold text-lg text-purple-700 mb-2">Utilisation récente</h2>
+        <ul class="space-y-1 text-sm text-gray-700">
+          <li>📈 12 jobs exécutés aujourd’hui</li>
+          <li>🧪 4 notebooks ouverts cette semaine</li>
+          <li>🔄 98% de disponibilité sur 30 jours</li>
+        </ul>
+      </div>
+    </div>
 
-        <h1 class="text-3xl font-bold text-purple-800 mb-6">Support & Assistance</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-lg font-semibold text-purple-700 mb-2">Besoin d’aide ?</h2>
-            <p class="text-sm text-gray-700 mb-4">
-              Contactez l’équipe Telary par email à <a href="mailto:support@telary.io" class="text-purple-600 underline">support@telary.io</a><br/>
-              ou utilisez le bouton ci-dessous.
-            </p>
-            <a href="mailto:support@telary.io" class="inline-block bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">
-              Envoyer une demande
-            </a>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-lg font-semibold text-purple-700 mb-2">Documentation</h2>
-            <p class="text-sm text-gray-700">Retrouvez les guides, tutoriels et bonnes pratiques dans notre base de connaissances.</p>
-            <a href="https://telary.io/docs" target="_blank" class="inline-block mt-4 text-purple-600 underline">Voir la documentation</a>
-          </div>
-        </div>
-      </main>
-    </body>
+    <h1 class="text-3xl font-bold text-purple-700 mb-6">Support & Assistance</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-lg font-semibold text-purple-700 mb-2">Besoin d’aide ?</h2>
+        <p class="text-sm text-gray-700 mb-4">
+          Contactez l’équipe Telary par email à <a href="mailto:support@telary.io"
+            class="text-purple-700 underline">support@telary.io</a><br />
+          ou utilisez le bouton ci-dessous.
+        </p>
+        <a href="mailto:support@telary.io"
+          class="inline-block bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-700">
+          Envoyer une demande
+        </a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-lg font-semibold text-purple-700 mb-2">Documentation</h2>
+        <p class="text-sm text-gray-700">Retrouvez les guides, tutoriels et bonnes pratiques dans notre base de
+          connaissances.</p>
+        <a href="https://telary.io/docs" target="_blank" class="inline-block mt-4 text-purple-700 underline">Voir la
+          documentation</a>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

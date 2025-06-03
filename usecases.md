@@ -10,7 +10,7 @@ title: Telary - Data made Agile
 
     <main class="py-12 px-6">
       <section class="max-w-5xl mx-auto">
-        <h2 class="text-2xl font-bold text-purple-800 mb-6">Pourquoi construire une plateforme de données ?</h2>
+        <h2 class="text-2xl font-bold text-purple-700 mb-6">Pourquoi construire une plateforme de données ?</h2>
         <p class="text-lg text-gray-700 mb-4">
           Une plateforme de données est un ensemble de composants logiciels utilisés pour collecter, stocker, organiser et exploiter des données. Vous pouvez choisir une solution tout-en-un ou combiner différents outils pour répondre à vos besoins.
         </p>
@@ -18,7 +18,7 @@ title: Telary - Data made Agile
       </section>
 
       <section class="max-w-5xl mx-auto">
-        <h2 class="text-2xl font-bold text-purple-800 mb-6">Cas d'Usage Courants</h2>
+        <h2 class="text-2xl font-bold text-purple-700 mb-6">Cas d'Usage Courants</h2>
         <table class="w-full bg-white rounded-xl shadow overflow-hidden border border-gray-200">
           <thead class="bg-purple-700 text-white">
             <tr>

@@ -1,130 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Storage Management</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@heroicons/react/outline"></script>
-    <style>
-      .status-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 9999px;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 text-gray-900 font-sans">
-    <!-- Header -->
-    <header class="bg-white shadow p-4 flex items-center justify-between">
-      <a href="../dashboard.html"><div class="text-2xl font-semibold text-purple-700">Data Platform</div></a>
-      <div class="flex items-center space-x-6">
-        <!-- Status Indicators -->
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Notebooks</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Storage</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">Orchestrator</span>
-          </div>
-          <div class="flex items-center space-x-1">
-            <span class="status-dot bg-green-500"></span>
-            <span class="text-sm text-gray-600">System</span>
-          </div>
-        </div>
-        <!-- User Info -->
-        <div class="flex items-center space-x-2">
-          <div class="text-sm text-gray-800">Bienvenue, <strong>Constant</strong></div>
-          <img src="https://ui-avatars.com/api/?name=DA&background=7e22ce&color=fff" class="w-8 h-8 rounded-full" alt="avatar">
-        </div>
-      </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="p-6">
-      <h2 class="text-2xl font-semibold mb-4 text-purple-800">Database and File System Overview</h2>
-      <div class="overflow-x-auto">
-        <table class="min-w-full bg-white border border-gray-200">
-          <thead>
-            <tr class="bg-gray-100 text-gray-600">
-              <th class="py-2 px-4 border-b">Icon</th>
-              <th class="py-2 px-4 border-b">Database Type</th>
-              <th class="py-2 px-4 border-b">Name</th>
-              <th class="py-2 px-4 border-b">Size</th>
-              <th class="py-2 px-4 border-b">Tables</th>
-              <th class="py-2 px-4 border-b">Opened Files</th>
-              <th class="py-2 px-4 border-b">Last File Created</th>
-              <th class="py-2 px-4 border-b">Pricing</th>
-              <th class="py-2 px-4 border-b">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-50">
-              <td class="py-2 px-4 border-b">
-                <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL Icon" class="w-6 h-6">
-              </td>
-              <td class="py-2 px-4 border-b">PostgreSQL</td>
-              <td class="py-2 px-4 border-b">MainDB</td>
-              <td class="py-2 px-4 border-b">150 GB</td>
-              <td class="py-2 px-4 border-b">45</td>
-              <td class="py-2 px-4 border-b">12</td>
-              <td class="py-2 px-4 border-b">2023-10-01</td>
-              <td class="py-2 px-4 border-b">$50/month</td>
-              <td class="py-2 px-4 border-b">
-                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Pause</button>
-                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
-              </td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="py-2 px-4 border-b">
-                <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL Icon" class="w-6 h-6">
-              </td>
-              <td class="py-2 px-4 border-b">MySQL</td>
-              <td class="py-2 px-4 border-b">AnalyticsDB</td>
-              <td class="py-2 px-4 border-b">200 GB</td>
-              <td class="py-2 px-4 border-b">30</td>
-              <td class="py-2 px-4 border-b">8</td>
-              <td class="py-2 px-4 border-b">2023-09-28</td>
-              <td class="py-2 px-4 border-b">$40/month</td>
-              <td class="py-2 px-4 border-b">
-                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Pause</button>
-                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
-              </td>
-            </tr>
-            <tr class="hover:bg-gray-50">
-              <td class="py-2 px-4 border-b">
-                <img src="https://img.icons8.com/color/48/000000/folder-invoices.png" alt="File System Icon" class="w-6 h-6">
-              </td>
-              <td class="py-2 px-4 border-b">File System</td>
-              <td class="py-2 px-4 border-b">SharedFiles</td>
-              <td class="py-2 px-4 border-b">500 GB</td>
-              <td class="py-2 px-4 border-b">N/A</td>
-              <td class="py-2 px-4 border-b">20</td>
-              <td class="py-2 px-4 border-b">2023-10-02</td>
-              <td class="py-2 px-4 border-b">$30/month</td>
-              <td class="py-2 px-4 border-b">
-                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Pause</button>
-                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storage Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@heroicons/react/outline"></script>
+  <style>
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <a href="../dashboard.html">
+      <div class="text-2xl font-semibold text-purple-700">Data Platform</div>
+    </a>
+    <div class="flex items-center space-x-6">
+      <!-- Status Indicators -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Notebooks</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Storage</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">Orchestrator</span>
+        </div>
+        <div class="flex items-center space-x-1">
+          <span class="status-dot bg-green-500"></span>
+          <span class="text-sm text-gray-600">System</span>
+        </div>
       </div>
-    </main>
-  </body>
-  <script>
-    // Simulation de mise à jour des statuts
-    setInterval(() => {
-      const dots = document.querySelectorAll('.status-dot');
-      dots.forEach(dot => {
-        dot.classList.add('bg-green-500');
-      });
-    }, 5000);
-  </script>
+      <!-- User Info -->
+      <div class="flex items-center space-x-2">
+        <div class="text-sm text-gray-800">Bienvenue, <strong>Constant</strong></div>
+        <img src="https://ui-avatars.com/api/?name=DA&background=7e22ce&color=fff" class="w-8 h-8 rounded-full"
+          alt="avatar">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <h2 class="text-2xl font-semibold mb-4 text-purple-700">Database and File System Overview</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border border-gray-200">
+        <thead>
+          <tr class="bg-gray-100 text-gray-600">
+            <th class="py-2 px-4 border-b">Icon</th>
+            <th class="py-2 px-4 border-b">Database Type</th>
+            <th class="py-2 px-4 border-b">Name</th>
+            <th class="py-2 px-4 border-b">Size</th>
+            <th class="py-2 px-4 border-b">Tables</th>
+            <th class="py-2 px-4 border-b">Opened Files</th>
+            <th class="py-2 px-4 border-b">Last File Created</th>
+            <th class="py-2 px-4 border-b">Pricing</th>
+            <th class="py-2 px-4 border-b">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-gray-50">
+            <td class="py-2 px-4 border-b">
+              <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL Icon" class="w-6 h-6">
+            </td>
+            <td class="py-2 px-4 border-b">PostgreSQL</td>
+            <td class="py-2 px-4 border-b">MainDB</td>
+            <td class="py-2 px-4 border-b">150 GB</td>
+            <td class="py-2 px-4 border-b">45</td>
+            <td class="py-2 px-4 border-b">12</td>
+            <td class="py-2 px-4 border-b">2023-10-01</td>
+            <td class="py-2 px-4 border-b">$50/month</td>
+            <td class="py-2 px-4 border-b">
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Pause</button>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-2 px-4 border-b">
+              <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL Icon" class="w-6 h-6">
+            </td>
+            <td class="py-2 px-4 border-b">MySQL</td>
+            <td class="py-2 px-4 border-b">AnalyticsDB</td>
+            <td class="py-2 px-4 border-b">200 GB</td>
+            <td class="py-2 px-4 border-b">30</td>
+            <td class="py-2 px-4 border-b">8</td>
+            <td class="py-2 px-4 border-b">2023-09-28</td>
+            <td class="py-2 px-4 border-b">$40/month</td>
+            <td class="py-2 px-4 border-b">
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Pause</button>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="py-2 px-4 border-b">
+              <img src="https://img.icons8.com/color/48/000000/folder-invoices.png" alt="File System Icon"
+                class="w-6 h-6">
+            </td>
+            <td class="py-2 px-4 border-b">File System</td>
+            <td class="py-2 px-4 border-b">SharedFiles</td>
+            <td class="py-2 px-4 border-b">500 GB</td>
+            <td class="py-2 px-4 border-b">N/A</td>
+            <td class="py-2 px-4 border-b">20</td>
+            <td class="py-2 px-4 border-b">2023-10-02</td>
+            <td class="py-2 px-4 border-b">$30/month</td>
+            <td class="py-2 px-4 border-b">
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Pause</button>
+              <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+<script>
+  // Simulation de mise à jour des statuts
+  setInterval(() => {
+    const dots = document.querySelectorAll('.status-dot');
+    dots.forEach(dot => {
+      dot.classList.add('bg-green-500');
+    });
+  }, 5000);
+</script>
+
 </html>

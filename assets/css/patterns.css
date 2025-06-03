@@ -33,3 +33,15 @@
     display: block;
     inset: -17px 0% 0%;
 }
+
+.text-purple-700 {
+    color: #5238a4ff !important;
+}
+
+.bg-purple-700 {
+    background-color: #5238a4ff !important;
+}
+
+.border-purple-700 {
+    border-color: #5238a4ff !important;
+}
