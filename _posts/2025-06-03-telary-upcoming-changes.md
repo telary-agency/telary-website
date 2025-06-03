@@ -1,3 +1,7 @@
+---
+layout: none
+---
+
 Techno to tests:
 
 * meltano
