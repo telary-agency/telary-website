@@ -14,7 +14,7 @@ title: Telary - Data made Agile
         <p class="text-lg text-gray-700 mb-4">
           Une plateforme de données est un ensemble de composants logiciels utilisés pour collecter, stocker, organiser et exploiter des données. Vous pouvez choisir une solution tout-en-un ou combiner différents outils pour répondre à vos besoins.
         </p>
-        <img src="/data-platform-diagram.png" alt="Components of a modern data platform" class="h-full mx-auto mb-8 rounded shadow" />
+        <!--<img src="/data-platform-diagram.png" alt="Components of a modern data platform" class="h-full mx-auto mb-8 rounded shadow" />-->
       </section>
 
       <section class="max-w-5xl mx-auto">

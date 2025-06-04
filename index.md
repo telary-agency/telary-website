@@ -94,6 +94,18 @@ title: Telary - Data made Agile
             <p>Maintenance 5j/7 avec SLA, notre équipe veille pour vous.</p>
           </div>
           </a>
+          <a href="usecases">
+            <div class="bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-semibold mb-2">✔️ Hébergement en France</h3>
+            <p>Vos données sont hébergées en France et en Europe, conformément au RGPD.</p>
+          </div>
+          </a>
+          <a href="usecases">
+            <div class="bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-semibold mb-2">✔️ Made in France</h3>
+            <p>Développé et maintenu en France par une équipe française.</p>
+          </div>
+          </a>
         </div>
         <a href="usecases" class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
           Apprenez en plus sur ce que vous pourrez faire avec Telary

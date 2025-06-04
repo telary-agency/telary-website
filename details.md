@@ -8,11 +8,9 @@ title: Telary - Data made Agile
     <header class="bg-purple-700 text-white py-6 text-center">
       <h1 class="text-3xl font-bold">Details des offres</h1>
     </header>
-
     <section class="bg-white py-20 px-6">
     {% include hero/pricing.html %}
     </section>
-
     <!-- Comparison Table -->
     <section class="py-10 px-6">
       <div class="max-w-6xl mx-auto">
@@ -23,24 +21,58 @@ title: Telary - Data made Agile
               <tr class="bg-gray-100">
                 <th class="border border-gray-300 px-4 py-2 text-left">Catégorie</th>
                 <th class="border border-gray-300 px-4 py-2 text-left">Produits</th>
-                <th class="border border-gray-300 px-4 py-2 text-center">Essentielle</th>
-                <th class="border border-gray-300 px-4 py-2 text-center">Standard</th>
+                <th class="border border-gray-300 px-4 py-2 text-center">Startup</th>
+                <th class="border border-gray-300 px-4 py-2 text-center">Scaleup</th>
                 <th class="border border-gray-300 px-4 py-2 text-center">Entreprise</th>
               </tr>
             </thead>
             <tbody>
-              <!-- Data Processing Tech -->
+            <!-- Workflow Orchestration -->
               <tr>
-                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="5">Data Processing Tech</td>
+                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">Workflow Orchestration</td>
                 <td class="border border-gray-300 px-4 py-2">
-                  <strong>Apache Trino</strong> <br />
-                  <span class="text-sm text-gray-600">Netflix, LinkedIn</span>
+                  <strong>Apache Airflow</strong> <br />
+                  <span class="text-sm text-gray-600">Airbnb, Lyft</span>
+                </td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+              </tr>
+              <!-- BI Tools -->
+              <tr>
+                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">BI Tools</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <strong>Ligthdash</strong> <br />
+                  <span class="text-sm text-gray-600">Alma, Cardless, Workday</span>
                 </td>
                 <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
                 <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
                 <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">Exploration</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <strong>Jupyter</strong> <br />
+                  <span class="text-sm text-gray-600">Berkeley, Bloomberg, Google</span>
+                </td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+              </tr>
+              <!-- Ingestion -->
+              <tr>
+                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">Ingestion</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  <strong>PyAirbyte</strong> <br />
+                  <span class="text-sm text-gray-600">Siemens, Calendly, Perplexity</span>
+                </td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+              </tr>
+              <!-- Data Processing Tech -->
+              <tr>
+                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="5">Data Processing Tech</td>
                 <td class="border border-gray-300 px-4 py-2">
                   <strong>DuckDB</strong> <br />
                   <span class="text-sm text-gray-600">Hugging Face, Okta</span>
@@ -60,6 +92,15 @@ title: Telary - Data made Agile
               </tr>
               <tr>
                 <td class="border border-gray-300 px-4 py-2">
+                  <strong>Apache Trino</strong> <br />
+                  <span class="text-sm text-gray-600">Netflix, LinkedIn</span>
+                </td>
+                <td class="border border-gray-300 px-4 py-2 text-center">❌</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
                   <strong>Polars</strong> <br />
                   <span class="text-sm text-gray-600">Netflix, Microsoft</span>
                 </td>
@@ -74,39 +115,6 @@ title: Telary - Data made Agile
                 </td>
                 <td class="border border-gray-300 px-4 py-2 text-center">❌</td>
                 <td class="border border-gray-300 px-4 py-2 text-center">❌</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-              </tr>
-              <!-- Workflow Orchestration -->
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">Workflow Orchestration</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  <strong>Apache Airflow</strong> <br />
-                  <span class="text-sm text-gray-600">Airbnb, Lyft</span>
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-              </tr>
-              <!-- BI Tools -->
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">BI Tools</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  <strong>Metabase</strong> <br />
-                  <span class="text-sm text-gray-600">Postmates, Medium, MacDonald</span>
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-center">❌</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-              </tr>
-              <!-- Ingestion -->
-              <tr>
-                <td class="border border-gray-300 px-4 py-2 font-bold bg-gray-100" rowspan="1">Ingestion</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  <strong>Airbyte</strong> <br />
-                  <span class="text-sm text-gray-600">Siemens, Calendly, Perplexity</span>
-                </td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
                 <td class="border border-gray-300 px-4 py-2 text-center">✔️</td>
               </tr>
               <!-- Search engine -->
