@@ -222,7 +222,7 @@ title: Telary - Data made Agile
     <section class="bg-purple-700 text-white py-16 text-center">
       <h2 class="text-3xl font-bold mb-4">Vous voulez enfin exploiter vos données ?</h2>
       <p class="mb-6 text-lg">Contactez nous pour découvrir comment nous pouvons vous aider.</p>
-      <a href="mailto:contact@votredata.fr" class="bg-white text-purple-700 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">
+      <a href="https://www.linkedin.com/in/constant-deschietere/" class="bg-white text-purple-700 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">
         Contactez-nous
       </a>
     </section>
