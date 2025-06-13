@@ -8,7 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jekyll-polyglot", "~> 1.9.0"
+  gem "jekyll-polyglot", "~> 1.5.0"
 end
 
 # Windows and JRuby does not include zoneinfo files
