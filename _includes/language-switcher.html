@@ -1,0 +1,11 @@
+{% if site.languages.size > 1 %}
+<div class="language-switcher">
+    <a {% static_href %}href="{{ site.url }}/" {% endstatic_href %}>
+        🇬🇧
+    </a>
+    |
+    <a {% static_href %}href="{{ site.url }}/fr/" {% endstatic_href %}>
+        🇫🇷
+    </a>
+</div>
+{% endif %}

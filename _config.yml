@@ -15,3 +15,21 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-polyglot
+
+# Polyglot configuration
+languages: ["fr", "en"]
+default_lang: "en"
+exclude_from_localizations:
+  [
+    "assets",
+    "images",
+    "js",
+    "css",
+    "Gemfile",
+    "Gemfile.lock",
+    "node_modules",
+    "vendor",
+  ]
+parallel_localization: true
+lang_from_path: true

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ page.lang | default: site.active_lang }}">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/patterns.css' | relative_url }}" />
   <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="65f5dcd8-b94c-4d82-aa34-6bc36f99c13f" async>
   </script>
+  <meta property="og:image" content="{{ '/assets/img/ogsite.png' | absolute_url }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <!--<script src="{{ '/assets/js/language-detection.js' | relative_url }}"></script>-->
 </head>
 
 <body>
