@@ -163,7 +163,7 @@ title: Telary - Data made Agile
             </div>
             <div class="truncate text-center w-full absolute left-0 right-0 text-gray-500">https://client.telary.io/dashboard</div>
           </div>
-          <iframe src="dashboard.html" class="w-full h-[700px] bg-white"></iframe>
+          <iframe src="dashboard/data.html" class="w-full h-[700px] bg-white"></iframe>
         </div>
       </div>
     </section>
