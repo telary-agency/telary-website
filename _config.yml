@@ -33,3 +33,6 @@ exclude_from_localizations:
   ]
 parallel_localization: true
 lang_from_path: true
+
+sass:
+  sourcemap: never

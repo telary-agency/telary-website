@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.10.0"
+gem "jekyll", "~> 4.3.2"
 gem "github-pages", group: :jekyll_plugins
 
 
@@ -8,7 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jekyll-polyglot", "~> 1.5.0"
+  gem "jekyll-polyglot", "~> 1.9.0"
 end
 
 # Windows and JRuby does not include zoneinfo files
