@@ -118,7 +118,7 @@ permalink: /
 
     <!-- Pricing -->
     <section class="bg-white py-20 px-6">
-      {% include hero/pricing.html %}
+      {% include hero/pricing_en.html %}
     </section>
 
      <!-- Economic comparison -->

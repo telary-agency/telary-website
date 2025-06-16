@@ -9,7 +9,7 @@ title: Telary - Data made Agile
       <h1 class="text-3xl font-bold">Details des offres</h1>
     </header>
     <section class="bg-white py-20 px-6">
-    {% include hero/pricing.html %}
+    {% include hero/pricing_en.html %}
     </section>
     <!-- Comparison Table -->
     <section class="py-10 px-6">

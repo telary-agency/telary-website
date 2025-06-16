@@ -118,7 +118,7 @@ permalink: /
 
     <!-- Tarifs -->
     <section class="bg-white py-20 px-6">
-      {% include hero/pricing.html %}
+      {% include hero/pricing_fr.html %}
     </section>
 
      <!-- Comparatif économique -->
