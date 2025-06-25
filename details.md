@@ -140,9 +140,9 @@ title: Telary - Data made Agile
               <!-- Pricing -->
               <tr class="bg-gray-100">
                 <td colspan="2" class="border border-gray-300 px-4 py-2 font-bold text-right">Prix Mensuel</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">1200€</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">2400€</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">3600€+</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/fr/price_offer_1.html %}</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/fr/price_offer_2.html %}</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/fr/price_offer_3.html %}</td>
               </tr>
             </tbody>
           </table>
