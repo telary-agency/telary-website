@@ -144,7 +144,7 @@ permalink: /
                 <li>• Déploiement en 24h</li>
                 <li>• Maintenance incluse (SLA 5j/7)</li>
                 <li>• Support humain</li>
-                <li class="font-bold mt-2">✅ À partir de 14 400€/an</li>
+                <li class="font-bold mt-2">✅ À partir de 7 200€/an</li>
               </ul>
             </div>
           </div>

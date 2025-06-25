@@ -144,7 +144,7 @@ permalink: /
                 <li>• Deployment in 24h</li>
                 <li>• Included maintenance (5/7 SLA)</li>
                 <li>• Human support</li>
-                <li class="font-bold mt-2">✅ From €14,400/year</li>
+                <li class="font-bold mt-2">✅ From 7,200/year</li>
               </ul>
             </div>
           </div>
