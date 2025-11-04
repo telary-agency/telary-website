@@ -41,12 +41,14 @@
             </article>
 
             <!-- Table of Contents Section - Right Side -->
+            {% unless page.hide_toc %}
             <aside class="toc-wrapper">
                 <nav id="toc" class="toc-sticky">
                     <h2 class="toc-title">Contents</h2>
                     <div id="toc-content"></div>
                 </nav>
             </aside>
+            {% endunless %}
         </div>
     </main>
 
