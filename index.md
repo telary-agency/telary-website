@@ -11,7 +11,7 @@ permalink: /
     <section class="bg-white py-20 px-6 text-center shadow-md textured-section-hero">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
-          Your data. Ready for <span id="rotating-text" class="inline-block min-w-[250px] text-left">AI</span>
+          Your data. Ready for <span id="rotating-text" class="inline-block min-w-[250px] text-left">AI.</span>
         </h1>
         <p class="text-xl text-gray-600 mb-6">
           A turnkey, managed data platform, 100% open source and deployed in 24h.

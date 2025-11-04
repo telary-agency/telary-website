@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Telary - Data made Agile
-lang: en
+lang: fr
 page_id: details
 permalink: /details
 ---
@@ -9,7 +9,7 @@ permalink: /details
   <body class="bg-gray-50 text-gray-900 font-sans">
     <!-- Header -->
     <header class="bg-purple-700 text-white py-6 text-center">
-      <h1 class="text-3xl font-bold">Plan details</h1>
+      <h1 class="text-3xl font-bold">Details des offres</h1>
     </header>
     <section class="bg-white py-20 px-6">
     {% include hero/pricing_en.html %}
@@ -17,16 +17,16 @@ permalink: /details
     <!-- Comparison Table -->
     <section class="py-10 px-6">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-6 text-purple-700">Tools by plan</h2>
+        <h2 class="text-2xl font-bold text-center mb-6 text-purple-700">Comparatif des outils utilisés</h2>
         <div class="overflow-x-auto">
           <table class="table-auto w-full border-collapse border border-gray-200">
             <thead>
               <tr class="bg-gray-100">
-                <th class="border border-gray-300 px-4 py-2 text-left">Category</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Products</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Catégorie</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Produits</th>
                 <th class="border border-gray-300 px-4 py-2 text-center">Startup</th>
                 <th class="border border-gray-300 px-4 py-2 text-center">Scaleup</th>
-                <th class="border border-gray-300 px-4 py-2 text-center">Enterprise</th>
+                <th class="border border-gray-300 px-4 py-2 text-center">Entreprise</th>
               </tr>
             </thead>
             <tbody>
@@ -127,25 +127,25 @@ permalink: /details
                   <strong>Elasticsearch</strong> <br />
                   <span class="text-sm text-gray-600">Uber, Booking</span>
                 </td>
-                <td class="border border-gray-300 px-4 py-2 text-center">on demand</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">on demand</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">on demand</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">à la demande</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">à la demande</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">à la demande</td>
               </tr>
               <tr>
                 <td class="border border-gray-300 px-4 py-2">
                   <strong>TypeSense</strong> <br />
                   <span class="text-sm text-gray-600">Logitech, BBC</span>
                 </td>
-                <td class="border border-gray-300 px-4 py-2 text-center">on demand</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">on demand</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">on demand</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">à la demande</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">à la demande</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">à la demande</td>
               </tr>
               <!-- Pricing -->
               <tr class="bg-gray-100">
-                <td colspan="2" class="border border-gray-300 px-4 py-2 font-bold text-right">Monthly price</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/en/price_offer_1.html %}</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/en/price_offer_2.html %}</td>
-                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/en/price_offer_3.html %}</td>
+                <td colspan="2" class="border border-gray-300 px-4 py-2 font-bold text-right">Prix Mensuel</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/fr/price_offer_1.html %}</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/fr/price_offer_2.html %}</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">{% include hero/fr/price_offer_3.html %}</td>
               </tr>
             </tbody>
           </table>

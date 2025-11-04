@@ -11,7 +11,7 @@ permalink: /
     <section class="bg-white py-20 px-6 text-center shadow-md textured-section-hero">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
-          Préparez vos données pour l’ère de l’IA
+          Préparez vos données pour l’ère de l’IA.
         </h1>
         <p class="text-xl text-gray-600 mb-6">
           Une data platform clé en main, managée, 100% open source et déployée en 24h.
