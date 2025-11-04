@@ -1,3 +1,4 @@
+---
 title: "Demo: Reading a public google sheet with Telary"
 slug: demo-public-google-sheet
 date_published: 2025-11-04T00:00:00.000Z
