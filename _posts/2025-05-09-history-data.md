@@ -7,6 +7,8 @@ layout: post
 image: /assets/img/banners/photo-researca-18.avif
 ---
 
+Here is a quick recap on the evolution of the data world, and what were the biggest shifts.
+
 # Early Days (<1970/1980)
 
 Databases began as simple files storing data. This had some limitations, and as the usage of technology grew, an alternative started to emerge.

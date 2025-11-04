@@ -143,40 +143,172 @@ article table tr:hover {
     background-color: #f1f1f1;
 }
 
-#toc {
-    background-color: #f9f9f9;
-    border-radius: 5px;
+/* Modern Medium-style layout with TOC on right */
+.main-content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-#toc h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.content-with-toc {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.content-container {
+    flex: 1;
+    max-width: 680px;
+    padding: 0 20px;
+}
+
+.article-date {
+    color: #757575;
+    font-size: 0.95em;
+    margin-bottom: 30px;
+}
+
+/* TOC Wrapper and Sticky Positioning */
+.toc-wrapper {
+    flex: 0 0 280px;
+    /* Make the whole TOC column sticky for broader browser compatibility */
+    position: sticky;
+    top: var(--toc-top, 100px);
+    align-self: flex-start;
+    z-index: 1;
+}
+
+#toc {
+    /* Inner container scrolls; sticky handled by wrapper */
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: 0;
+}
+
+/* TOC Styling - Medium Style */
+.toc-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #242424;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 #toc-content {
-    list-style: disc; /* Add list markers */
-    padding-left: 20px; /* Indent for better readability */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#toc-content .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #toc-content li {
-    margin-bottom: 5px; /* Add spacing between list items */
-}
-
-.node-name--H2 {
-    margin-left: 20px; /* Indent H2 items */
-    list-style-type: circle; /* Use a different marker for H2 */
-}
-
-.node-name--H3 {
-    margin-left: 40px; /* Indent H3 items */
-    list-style-type: square; /* Use a different marker for H3 */
+    margin-bottom: 0;
+    padding: 0;
 }
 
 #toc-content a {
+    display: block;
     text-decoration: none;
-    color: #333;
+    color: #6B6B6B;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding: 6px 0;
+    border-left: 2px solid transparent;
+    padding-left: 12px;
+    transition: all 0.2s ease;
 }
 
 #toc-content a:hover {
-    text-decoration: underline;
+    color: #242424;
+    border-left-color: #E0E0E0;
+}
+
+#toc-content a.is-active-link {
+    color: #242424;
+    font-weight: 500;
+    border-left-color: #5238a4ff;
+}
+
+/* Nested heading levels */
+#toc-content .is-collapsible {
+    padding-left: 0;
+}
+
+#toc-content .toc-list-item.node-name--H2 > a {
+    padding-left: 12px;
+}
+
+#toc-content .toc-list-item.node-name--H3 > a {
+    padding-left: 28px;
+    font-size: 0.8125rem;
+}
+
+#toc-content .toc-list-item.node-name--H4 > a {
+    padding-left: 44px;
+    font-size: 0.8125rem;
+}
+
+/* Hide scrollbar but keep functionality */
+#toc::-webkit-scrollbar {
+    width: 4px;
+}
+
+#toc::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#toc::-webkit-scrollbar-thumb {
+    background: #E0E0E0;
+    border-radius: 4px;
+}
+
+#toc::-webkit-scrollbar-thumb:hover {
+    background: #B0B0B0;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .content-with-toc {
+        gap: 40px;
+    }
+    
+    .toc-wrapper {
+        flex: 0 0 240px;
+    }
+}
+
+/* Keep sticky TOC active on most laptops/tablets; only stack on smaller screens */
+@media (max-width: 900px) {
+    .content-with-toc {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .toc-wrapper {
+        flex: 0 0 auto;
+        width: 100%;
+        order: -1;
+        position: static; /* disable sticky on small screens */
+        top: 0;
+    }
+    
+    #toc {
+        max-height: none;
+        background-color: #F9F9F9;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .content-container {
+        max-width: 100%;
+    }
 }

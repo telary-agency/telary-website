@@ -11,11 +11,38 @@ permalink: /
     <section class="bg-white py-20 px-6 text-center shadow-md textured-section-hero">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
-          Your data. Ready for AI.
+          Your data. Ready for <span id="rotating-text" class="inline-block min-w-[250px] text-left">AI</span>
         </h1>
         <p class="text-xl text-gray-600 mb-6">
           A turnkey, managed data platform, 100% open source and deployed in 24h.
         </p>
+        <style>
+          #rotating-text {
+            transition: opacity 0.2s ease-in-out;
+          }
+          #rotating-text.fade {
+            opacity: 0;
+          }
+        </style>
+        <script>
+          (function() {
+            const words = ['AI', 'Insights', 'Monitoring'];
+            let currentIndex = 0;
+            const element = document.getElementById('rotating-text');
+            
+            function rotateText() {
+              element.classList.add('fade');
+              
+              setTimeout(() => {
+                currentIndex = (currentIndex + 1) % words.length;
+                element.textContent = words[currentIndex];
+                element.classList.remove('fade');
+              }, 500);
+            }
+            
+            setInterval(rotateText, 1500);
+          })();
+        </script>
         <a href="#dashboard" class="bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
           Discover the product
         </a>
