@@ -1,3 +1,4 @@
+---
 title: Choosing the Best Data Warehouse for 2026
 slug: best-data-warehouse-2026
 date_published: 2025-11-03T00:00:00.000Z

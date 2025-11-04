@@ -1,3 +1,4 @@
+---
 title: "A Smarter Alternative to BigQuery + GitHub Actions"
 slug: telary-vs-bigquery-dbt-github-action
 date_published: 2025-07-14T00:00:00.000Z
