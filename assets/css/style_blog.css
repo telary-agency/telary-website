@@ -242,17 +242,21 @@ article table tr:hover {
     padding-left: 0;
 }
 
-#toc-content .toc-list-item.node-name--H2 > a {
-    padding-left: 12px;
+#toc-content a.node-name--H1 {
+    padding-left: 12px; /* Top-level */
 }
 
-#toc-content .toc-list-item.node-name--H3 > a {
-    padding-left: 28px;
+#toc-content a.node-name--H2 {
+    padding-left: 24px; /* Indent 1 level */
+}
+
+#toc-content a.node-name--H3 {
+    padding-left: 36px; /* Indent 2 levels */
     font-size: 0.8125rem;
 }
 
-#toc-content .toc-list-item.node-name--H4 > a {
-    padding-left: 44px;
+#toc-content a.node-name--H4 {
+    padding-left: 48px; /* Indent 3 levels */
     font-size: 0.8125rem;
 }
 

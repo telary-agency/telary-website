@@ -2,12 +2,12 @@
 title: A Quick History of Data
 slug: quick-history-data
 date_published: 2025-05-10T12:04:12.000Z
-date_updated: 2025-05-10T12:08:02.000Z
+date_updated: 2025-11-04T00:00:00.000Z
 layout: post
 image: /assets/img/banners/photo-researca-18.avif
 ---
 
-Here is a quick recap on the evolution of the data world, and what were the biggest shifts.
+Here is a quick recap of the evolution of the data world, and what the biggest shifts were.
 
 # Early Days (<1970/1980)
 
@@ -85,7 +85,7 @@ I think at this time we went through the "slope of disillusionment" on big data 
 
 [More details on the job Data Engineer created around 2015](https://app.researca.com/article/77413). Source: https://blog.det.life/the-history-of-data-engineering-1762b017541a.
 
-Based on the progress in big data and other factors, AI was revolutionized. [This piece is very interesting on the factors making LLMs possible](https://www.understandingai.org/p/why-the-deep-learning-boom-caught).
+Based on the progress in big data and other factors, AI was revolutionized. [This piece explains the factors that made LLMs possible](https://www.understandingai.org/p/why-the-deep-learning-boom-caught).
 
 # Personal View on the Current Situation (2020+)
 
