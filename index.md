@@ -26,7 +26,7 @@ permalink: /
         </style>
         <script>
           (function() {
-            const words = ['AI', 'Insights', 'Monitoring'];
+            const words = ['AI.', 'Insights.', 'Monitoring.'];
             let currentIndex = 0;
             const element = document.getElementById('rotating-text');
             
