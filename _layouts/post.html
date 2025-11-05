@@ -22,6 +22,35 @@
     .border-purple-700 {
       border-color: #5238a4ff !important;
     }
+        /* Telary post image lightbox (scoped, minimal) */
+        .tlry-post img {
+            cursor: zoom-in;
+            transition: transform 0.15s ease-in-out;
+        }
+        .tlry-lightbox {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 9999;
+            padding: 2rem;
+        }
+        .tlry-lightbox__img {
+            max-width: 92vw;
+            max-height: 92vh;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+        .tlry-lightbox__caption {
+            margin-top: 0.75rem;
+            color: #f3f4f6;
+            font-size: 0.9rem;
+            text-align: center;
+            max-width: 92vw;
+        }
+        .tlry-no-scroll { overflow: hidden; }
     </style>
 </head>
 
@@ -33,7 +62,7 @@
     <main class="main-content-wrapper">
         <div class="content-with-toc">
             <!-- Article Section -->
-            <article class="content-container">
+            <article class="content-container tlry-post">
                 <p class="article-date">{{ page.date | date: "%B %d, %Y" }}</p>
                 <div class="">
                     {{ content }}
@@ -53,6 +82,14 @@
     </main>
 
 
+    <!-- Lightbox markup (hidden by default) -->
+    <div id="tlryLightbox" class="tlry-lightbox" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="tlry-lightbox__inner" role="document">
+            <img id="tlryLightboxImg" class="tlry-lightbox__img" alt="" />
+            <div id="tlryLightboxCaption" class="tlry-lightbox__caption"></div>
+        </div>
+    </div>
+
     <!-- Include tocbot script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.min.js"></script>
     <script>
@@ -67,6 +104,55 @@
                 // For smooth scrolling
                 scrollSmooth: true,
             });
+
+            // Telary: simple, accessible lightbox for post images (within the article only)
+            const post = document.querySelector('article.content-container');
+            const lb = document.getElementById('tlryLightbox');
+            const lbImg = document.getElementById('tlryLightboxImg');
+            const lbCaption = document.getElementById('tlryLightboxCaption');
+
+            if (post && lb && lbImg) {
+                const imgs = post.querySelectorAll('img');
+                imgs.forEach((img) => {
+                    // Skip images explicitly marked as non-zoomable
+                    if (img.dataset && img.dataset.nozoom === 'true') return;
+
+                    img.addEventListener('click', (e) => {
+                        // Avoid navigating if image is wrapped in a link
+                        if (e && typeof e.preventDefault === 'function') e.preventDefault();
+                        const src = img.getAttribute('data-fullsrc') || img.currentSrc || img.src;
+                        const alt = img.getAttribute('alt') || '';
+                        const title = img.getAttribute('title') || '';
+                        lbImg.src = src;
+                        lbImg.alt = alt;
+                        lbCaption.textContent = title || alt;
+                        lb.style.display = 'flex';
+                        lb.setAttribute('aria-hidden', 'false');
+                        document.body.classList.add('tlry-no-scroll');
+                    });
+                });
+
+                const closeLightbox = () => {
+                    lb.style.display = 'none';
+                    lb.setAttribute('aria-hidden', 'true');
+                    lbImg.src = '';
+                    document.body.classList.remove('tlry-no-scroll');
+                };
+
+                // Close on click outside image
+                lb.addEventListener('click', (e) => {
+                    if (e.target === lb || e.target === lbCaption) {
+                        closeLightbox();
+                    }
+                });
+
+                // Close on Escape
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && lb.style.display === 'flex') {
+                        closeLightbox();
+                    }
+                });
+            }
         });
     </script>
     {% include footer.html %}
