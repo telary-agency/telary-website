@@ -57,136 +57,81 @@ permalink: /
     <!-- Opportunities Section -->
     <section class="bg-white py-20 px-6">
       <div class="max-w-4xl mx-auto">
-      <style>
-        /* Scoped styles for Opportunities section */
-        .op-section { 
-          --op-purple: #6A1B9A; 
-          --op-purple-hover: #7B1FA2;
-          --op-bg: #ffffff;
-          --op-text: #111827; /* gray-900 */
-          --op-muted: #374151; /* gray-700 */
-          font-family: Inter, Roboto, "Open Sans", system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
-          max-width: 64rem; /* ~1024px */
-          margin: 0 auto;
-        }
-        .op-wrap { display: flex; flex-direction: column; gap: 1.25rem; }
-        .op-title { font-size: 1.875rem; line-height: 2.25rem; font-weight: 800; color: var(--op-purple); text-align: center; margin-bottom: 1.5rem; }
-        .op-card { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border-radius: 0.75rem; background: var(--op-bg); color: var(--op-text); transition: background-color .2s ease, transform .2s ease; }
-        .op-card:hover .op-icon svg { stroke: var(--op-purple-hover); }
-        .op-icon { flex: 0 0 auto; width: 112px; height: 112px; display: grid; place-items: center; }
-  .op-icon svg { width: 100%; height: 100%; stroke: var(--op-purple); stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s ease; }
-  .op-icon svg text { fill: var(--op-purple); stroke: none; font-weight: 800; letter-spacing: 0.5px; }
-        /* Alternate layout on medium+ screens */
-        @media (min-width: 768px) {
-          .op-wrap { gap: 1rem; }
-          .op-card { gap: 1.25rem; padding: 1rem 1.5rem; }
-          .op-card.alt { flex-direction: row-reverse; }
-          .op-card.alt .op-text { text-align: right; }
-        }
-        /* Subtle hover background (kept light) */
-        .op-card:hover { background: rgba(106, 27, 154, 0.04); }
-        /* Dark mode adjustments */
-        @media (prefers-color-scheme: dark) {
-          .op-section { --op-bg: #0B0B0F; --op-text: #E5E7EB; --op-muted: #CBD5E1; }
-          .op-card { background: #0B0B0F; }
-          .op-card:hover { background: rgba(124, 58, 237, 0.10); }
-        }
-      </style>
-      <div class="op-section">
-        <h2 class="text-3xl font-bold text-center mb-8 text-purple-700">Unlock new opportunities for your teams</h2>
-        <div class="op-wrap">
-          <!-- 1: Dashboard / Reporting -->
-          <div class="op-card">
-            <div class="op-icon" aria-hidden="true">
-              <!-- Minimal dashboard/reporting icon -->
-              <svg viewBox="0 0 48 48" role="img">
-                <rect x="6" y="8" width="36" height="28" rx="3"></rect>
-                <line x1="6" y1="16" x2="42" y2="16"></line>
-                <rect x="12" y="24" width="4" height="8" rx="1"></rect>
-                <rect x="22" y="20" width="4" height="12" rx="1"></rect>
-                <rect x="32" y="26" width="4" height="6" rx="1"></rect>
-              </svg>
-            </div>
-            <div class="op-text">
-              <p>Forget about monthly exports and endless Excel transformations. <strong>Automate your reporting</strong> and steer your business day to day.</p>
-            </div>
-          </div>
+        <section class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-purple-700 mb-4">
+      Unlock new opportunities for your teams
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-16">
+      Turn data complexity into impact across reporting, insights, forecasting and AI.
+    </p>
 
-          <!-- 2: Person with speech bubble / Analytics (alternate) -->
-          <div class="op-card alt">
-            <div class="op-icon" aria-hidden="true">
-              <!-- Person with chat bubble icon -->
-              <svg viewBox="0 0 48 48" role="img">
-                <circle cx="16" cy="18" r="6"></circle>
-                <path d="M6 36c1.5-5.5 6.5-9 12-9s10.5 3.5 12 9"></path>
-                <rect x="28" y="10" width="14" height="10" rx="2"></rect>
-                <path d="M34 20v5l4-5"></path>
-              </svg>
-            </div>
-            <div class="op-text">
-              <p>Dig into your business from top to bottom with <strong>Analytics</strong> and uncover actionable insights to improve your business.</p>
-            </div>
-          </div>
-
-          <!-- 3: Cloud / Network -->
-          <div class="op-card">
-            <div class="op-icon" aria-hidden="true">
-              <!-- Cloud with nodes icon -->
-              <svg viewBox="0 0 48 48" role="img" aria-hidden="true">
-                <!-- Chart container -->
-                <rect x="6" y="8" width="36" height="32" rx="3"></rect>
-
-                <!-- Axes -->
-                <line x1="10" y1="34" x2="34" y2="34"></line>
-                <line x1="10" y1="12" x2="10" y2="34"></line>
-
-                <!-- Bars (simple columns) -->
-                <rect x="14" y="28" width="4" height="6" rx="1"></rect>
-                <rect x="20" y="22" width="4" height="12" rx="1"></rect>
-                <rect x="26" y="18" width="4" height="16" rx="1"></rect>
-
-                <!-- Trend line -->
-                <polyline points="12,30 16,24 22,18 28,15 34,13" fill="none" />
-
-                <!-- Data points on trend -->
-                <circle cx="16" cy="24" r="1.2"></circle>
-                <circle cx="22" cy="18" r="1.2"></circle>
-                <circle cx="28" cy="15" r="1.2"></circle>
-                <circle cx="34" cy="13" r="1.2"></circle>
-              </svg>    </div>
-            <div class="op-text">
-              <p>Explore <strong>predictive analytics</strong> and <strong>machine learning</strong> to anticipate future trends and make smarter decisions.</p>
-            </div>
-          </div>
-
-          <!-- 4: Microchip with AI (alternate) -->
-          <div class="op-card alt">
-            <div class="op-icon" aria-hidden="true">
-              <!-- Microchip with AI letters icon -->
-              <svg viewBox="0 0 48 48" role="img">
-                <rect x="12" y="12" width="24" height="24" rx="3"></rect>
-                <text x="24" y="24" text-anchor="middle" dominant-baseline="middle" font-size="10" font-family="Inter, Roboto, 'Open Sans', Arial, sans-serif">AI</text>
-                <!-- pins -->
-                <line x1="18" y1="8" x2="18" y2="12"></line>
-                <line x1="24" y1="8" x2="24" y2="12"></line>
-                <line x1="30" y1="8" x2="30" y2="12"></line>
-                <line x1="18" y1="36" x2="18" y2="40"></line>
-                <line x1="24" y1="36" x2="24" y2="40"></line>
-                <line x1="30" y1="36" x2="30" y2="40"></line>
-                <line x1="8" y1="18" x2="12" y2="18"></line>
-                <line x1="8" y1="24" x2="12" y2="24"></line>
-                <line x1="8" y1="30" x2="12" y2="30"></line>
-                <line x1="36" y1="18" x2="40" y2="18"></line>
-                <line x1="36" y1="24" x2="40" y2="24"></line>
-                <line x1="36" y1="30" x2="40" y2="30"></line>
-              </svg>
-            </div>
-            <div class="op-text">
-              <p>Power your <strong>AI agents</strong> with trustworthy data they can truly learn from.</p>
-            </div>
-          </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 text-left">
+      <!-- Card 1 -->
+      <div class="group bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-center h-14 w-14 rounded-xl bg-purple-50 text-purple-700 mb-6 group-hover:bg-purple-100">
+          <!-- Icon: bar chart -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18M9 17V9m4 8v-5m4 5V5" />
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Automated Reporting</h3>
+        <p class="text-gray-600">
+          Forget monthly exports and Excel dead-ends—automate your dashboards and run your business in real time.
+        </p>
       </div>
+
+      <!-- Card 2 -->
+      <div class="group bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-center h-14 w-14 rounded-xl bg-purple-50 text-purple-700 mb-6 group-hover:bg-purple-100">
+          <!-- Icon: beaker -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true" role="img">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+          </svg>
+    </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Analytics</h3>
+        <p class="text-gray-600">
+          Dive deep into your operations—from marketing to inventory—to uncover actionable insights.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-center h-14 w-14 rounded-xl bg-purple-50 text-purple-700 mb-6 group-hover:bg-purple-100">
+          <!-- Icon: trending up -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17l6-6 4 4 8-8" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Predictive Analytics</h3>
+        <p class="text-gray-600">
+          Harness machine learning to anticipate trends and make smarter decisions before they happen.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="flex items-center justify-center h-14 w-14 rounded-xl bg-purple-50 text-purple-700 mb-6 group-hover:bg-purple-100">
+          <!-- Icon: AI chip -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9h6v6H9zM3 3h2v2H3zm16 0h2v2h-2zM3 19h2v2H3zm16 0h2v2h-2zM5 5h14v14H5z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">AI-Powered Agents</h3>
+        <p class="text-gray-600">
+          Train your AI on clean, trustworthy data—so your agents don’t just react, they drive value.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16">
+      <a href="#dashboard" class="inline-block bg-purple-700 text-white font-medium px-8 py-3 rounded-full hover:bg-purple-700 transition">
+        Discover the Platform
+      </a>
+    </div>
+  </div>
+</section>
+
       </div>
     </section>
 
