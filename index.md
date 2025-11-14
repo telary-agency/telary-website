@@ -77,7 +77,7 @@ permalink: /
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">Automated Reporting</h3>
         <p class="text-gray-600">
-          Forget monthly exports and Excel dead-ends—automate your dashboards and run your business in real time.
+          Forget monthly exports and Excel dead-ends—automate your dashboards and steer your business in real time.
         </p>
       </div>
 
@@ -89,7 +89,7 @@ permalink: /
             <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
           </svg>
     </div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Analytics</h3>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Insights</h3>
         <p class="text-gray-600">
           Dive deep into your operations—from marketing to inventory—to uncover actionable insights.
         </p>
@@ -135,6 +135,33 @@ permalink: /
       </div>
     </section>
 
+    <section class="bg-white py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Text Content - Left Column -->
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold text-purple-700">
+              Deploy Telary within hours, and get started with your data journey
+            </h2>
+            <p class="text-lg text-gray-600">
+              Our platform is designed to remove the complexity of data management, and allow organizations to explore their data without having to hire a dedicated team.
+            </p>
+            <p class="text-gray-600 text-justify">
+              With a comprehensive UI, no code components, and automation through AI, getting started with Data has never been so easy.
+            </p>
+          </div>
+          
+          <!-- Image - Right Column -->
+          <div class="lg:order-last">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1725733618919-f45972c90229?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Telary Data Platform Architecture" class="w-full h-auto rounded-xl shadow-lg">
+              <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-transparent rounded-xl"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
       <!-- Who is it for -->
     <section class="py-20 px-6 bg-gray-100 textured-section">
       <div class="max-w-4xl mx-auto text-center">
@@ -163,203 +190,139 @@ permalink: /
         </div>
       </div>
     </section>
-    <!-- Challenges Section -->
-    <section class="bg-gray-50 py-20 px-6">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-8 text-purple-700">
-          Without a data platform, your data is a burden, not an asset.
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-4 text-gray-800">Common problems</h3>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-start">
-                <span class="text-red-500 mr-2">❌</span>
-                <span>Scattered Excel files, manual reporting</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-red-500 mr-2">❌</span>
-                <span>No clear vision on sales, inventory, or costs</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-red-500 mr-2">❌</span>
-                <span>Unable to cross-reference CRM, e-commerce, marketing, and internal application data</span>
-              </li>
-              <li class="flex items-start">
-                <span class="text-red-500 mr-2">❌</span>
-                <span>Teams waste time searching, cleaning, and understanding data</span>
-              </li>
-            </ul>
-          </div>
-          <div class="bg-purple-50 p-6 rounded-xl shadow border-t-4 border-purple-700">
-            <h3 class="text-xl font-semibold mb-4 text-purple-700">The Telary solution</h3>
-            <p class="text-gray-700 mb-4">
-              👉 Telary helps you structure, centralize, and leverage your data without hiring a technical team.
-            </p>
-            <div class="text-center">
-              <a href="#dashboard" class="inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
-                Discover the solution
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
-    <!-- Who is it for -->
-    <section class="py-20 px-6 bg-gray-100 textured-section">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6 text-purple-700">Designed for ambitious startups and SMEs</h2>
-        <p class="text-lg text-gray-600 mb-8">
-          Our platform is designed for companies that want to leverage their data without hiring a dedicated team.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <a href="usecases">
-            <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-2">✔️ Data centralization</h3>
-            <p>Connect your CRM, ERP, marketing tools, and internal databases.</p>
-          </div>
-          </a>
-          <a href="usecases">
-            <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-2">✔️ Reporting & automation</h3>
-            <p>Generate dashboards and automated reports.</p>
-          </div>
-          </a>
-          <a href="usecases">
-            <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-2">✔️ Zero proprietary dependencies</h3>
-            <p>100% open source, no black boxes, you keep control.</p>
-          </div>
-          </a>
-          <a href="usecases">
-            <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-2">✔️ Included support</h3>
-            <p>5/7 maintenance with SLA, our team watches over you.</p>
-          </div>
-          </a>
-          <a href="usecases">
-            <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-2">✔️ Hosting in France</h3>
-            <p>Your data is hosted in France and Europe, in compliance with GDPR.</p>
-          </div>
-          </a>
-          <a href="usecases">
-            <div class="bg-white p-6 rounded-xl shadow">
-            <h3 class="text-xl font-semibold mb-2">✔️ Made in France</h3>
-            <p>Developed and maintained in France by a French team.</p>
-          </div>
-          </a>
-        </div>
-        <a href="usecases" class="mt-8 inline-block bg-purple-700 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
-          Learn more about what you can do with Telary
-        </a>
-      </div>
-    </section>
-
-    <!-- Pricing -->
+    <!-- Use cases -->
     <section class="bg-white py-20 px-6">
-      {% include hero/pricing_en.html %}
-    </section>
-
-     <!-- Economic comparison -->
-     <section class="bg-white py-20 px-6 textured-section">
-        <div class="max-w-5xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-10 text-purple-700">Why choose us?</h2>
-          <p class="text-lg text-gray-600 mb-8">Save up to <strong>€100,000/year</strong> compared to building your own platform.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            <div class="bg-gray-50 p-6 rounded-xl shadow border-t-4 border-purple-700">
-              <h3 class="text-xl font-semibold mb-4">👩‍💻 Internal Data Team</h3>
-              <ul class="space-y-2 text-gray-700">
-                <li>• 1 Senior Data Engineer: €50,000/year</li>
-                <li>• 1 Junior Data Engineer: €35,000/year</li>
-                <li>• Overhead: €30,000/year</li>
-                <li>• Several months to get started</li>
-                <li class="font-bold mt-2">💸 Total: from €115,000/year</li>
-              </ul>
-            </div>
-            <div class="bg-purple-100 p-6 rounded-xl shadow border-t-4 border-purple-700">
-              <h3 class="text-xl font-semibold mb-4">🚀 Our platform</h3>
-              <ul class="space-y-2 text-gray-800">
-                <li>• Ready-to-use platform</li>
-                <li>• Deployment in 24h</li>
-                <li>• Included maintenance (5/7 SLA)</li>
-                <li>• Human support</li>
-                <li class="font-bold mt-2">✅ From 7,200/year</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <!-- Dashboard Preview -->
-    <section id="dashboard" class="bg-gray-100 py-20 px-6">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-10 text-center text-purple-700">Dashboard Preview</h2>
-        <p class="text-lg text-gray-600 mb-8 text-center">It's interactive, click on the sections, clicking on Data Platform returns you to the dashboard</p>
-        <div class="rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white">
-          <!-- Simulated browser top bar -->
-          <div class="flex items-center justify-between bg-gray-200 px-4 py-2 text-sm text-gray-600">
-            <div class="flex space-x-1">
-              <span class="w-3 h-3 bg-red-400 rounded-full"></span>
-              <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
-              <span class="w-3 h-3 bg-green-400 rounded-full"></span>
-            </div>
-            <div class="truncate text-center w-full absolute left-0 right-0 text-gray-500">https://client.telary.io/dashboard</div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <!-- Left Column - Title and CTA -->
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold text-purple-700">
+              Explore Real-World Use Cases
+            </h2>
+            <p class="text-lg text-gray-600">
+              Discover how different departments can leverage Telary to transform their data into actionable insights.
+            </p>
+            <a href="/usecases" class="inline-block bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
+              View All Use Cases
+            </a>
           </div>
-          <iframe src="dashboard/data.html" class="w-full h-[700px] bg-white"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- Success Stories & Clients -->
-    <section class="bg-white py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-purple-700">They already trust us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Client 1 -->
-              <div class="bg-gray-50 rounded-xl shadow p-6">
-                <a href="./cas/teletravail.guru">
-                  <h3 class="text-xl font-semibold text-purple-700 mb-2">💻 Télétravail.guru
-                    <p class="text-sm font-normal text-purple-700 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
-                      View case study
-                    </p>
-                  </h3>
-                  
-                  <p class="text-gray-600 mb-2">"Telary allows us to aggregate and analyze all the job offers we collect every day."</p>
-                  <a href="https://teletravail.guru" target="_blank" class="text-sm text-purple-700 underline">teletravail.guru</a>
-                </a>
+          
+          <!-- Right Column - Use Case Drawers -->
+          <div class="space-y-4">
+            <!-- Finance Drawer -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="finance-content">
+                <h3 class="text-lg font-semibold text-gray-900">💰 Finance</h3>
+                <span class="text-2xl text-purple-700 use-case-icon">+</span>
+              </button>
+              <div id="finance-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
+                <p class="text-gray-600 mb-3">Automate financial reporting, track KPIs, and gain real-time visibility into cash flow and profitability.</p>
+                <a href="/blog/finance-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
-    
-            <!-- Client 2 -->
-            <div class="bg-gray-50 rounded-xl shadow p-6">
-              <a href="./cas/joezz.com">
-                <h3 class="text-xl font-semibold text-purple-700 mb-2">🚀 Joezz
-                  <p class="text-sm font-normal text-purple-700 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
-                    View case study
-                  </p>
-                </h3>
-                
-                <p class="text-gray-600 mb-2">"Telary deployed the Essential version of the data platform to enable Joezz to ingest 15 million products every day"</p>
-                <a href="https://www.joezz.com" target="_blank" class="text-sm text-purple-700 underline">joezz.com</a>
-              </a>
             </div>
-    
-            <!-- Client 3 -->
-            <div class="bg-gray-50 rounded-xl shadow p-6">
-              <a href="./cas/researca.com">
-                <h3 class="text-xl font-semibold text-purple-700 mb-2">📰 Researca
-                  <p class="text-sm font-normal text-purple-700 bg-purple-100 inline-block px-2 py-1 rounded-full mt-1 mb-2">
-                    View case study
-                  </p>
-                </h3>
-                
-                <p class="text-gray-600 mb-2">"Throughout the day, Researca ingests hundreds of thousands of press articles and stores them in a Telary data platform."</p>
-                <a href="https://researca.com" target="_blank" class="text-sm text-purple-700 underline">researca.com</a>
-              </a>
+
+            <!-- Sales Drawer -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="sales-content">
+                <h3 class="text-lg font-semibold text-gray-900">📈 Sales</h3>
+                <span class="text-2xl text-purple-700 use-case-icon">+</span>
+              </button>
+              <div id="sales-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
+                <p class="text-gray-600 mb-3">Track sales performance, forecast revenue, and optimize your sales funnel with data-driven insights.</p>
+                <a href="/blog/sales-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+              </div>
             </div>
+
+            <!-- Marketing Drawer -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="marketing-content">
+                <h3 class="text-lg font-semibold text-gray-900">🎯 Marketing</h3>
+                <span class="text-2xl text-purple-700 use-case-icon">+</span>
+              </button>
+              <div id="marketing-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
+                <p class="text-gray-600 mb-3">Measure campaign effectiveness, understand customer acquisition costs, and optimize marketing spend across channels.</p>
+                <a href="/blog/marketing-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+              </div>
             </div>
+
+            <!-- Operations Drawer -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="operations-content">
+                <h3 class="text-lg font-semibold text-gray-900">⚙️ Operations</h3>
+                <span class="text-2xl text-purple-700 use-case-icon">+</span>
+              </button>
+              <div id="operations-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
+                <p class="text-gray-600 mb-3">Streamline inventory management, optimize supply chain, and monitor operational efficiency metrics.</p>
+                <a href="/blog/operations-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+              </div>
+            </div>
+
+            <!-- Product Drawer -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="product-content">
+                <h3 class="text-lg font-semibold text-gray-900">🚀 Product</h3>
+                <span class="text-2xl text-purple-700 use-case-icon">+</span>
+              </button>
+              <div id="product-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
+                <p class="text-gray-600 mb-3">Analyze user behavior, track feature adoption, and make data-driven product decisions to improve user experience.</p>
+                <a href="/blog/product-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+              </div>
+            </div>
+
+            <!-- Customer Service Drawer -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+              <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="customer-service-content">
+                <h3 class="text-lg font-semibold text-gray-900">💬 Customer Service</h3>
+                <span class="text-2xl text-purple-700 use-case-icon">+</span>
+              </button>
+              <div id="customer-service-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
+                <p class="text-gray-600 mb-3">Monitor support ticket trends, measure response times, and identify opportunities to improve customer satisfaction.</p>
+                <a href="/blog/customer-service-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- JavaScript for drawer functionality -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const toggles = document.querySelectorAll('.use-case-toggle');
+            
+            toggles.forEach(toggle => {
+              toggle.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = this.querySelector('.use-case-icon');
+                
+                // Close all other drawers
+                toggles.forEach(otherToggle => {
+                  if (otherToggle !== this) {
+                    const otherTargetId = otherToggle.getAttribute('data-target');
+                    const otherContent = document.getElementById(otherTargetId);
+                    const otherIcon = otherToggle.querySelector('.use-case-icon');
+                    
+                    if (otherContent && !otherContent.classList.contains('hidden')) {
+                      otherContent.classList.add('hidden');
+                      otherIcon.textContent = '+';
+                    }
+                  }
+                });
+                
+                // Toggle current drawer
+                if (content.classList.contains('hidden')) {
+                  content.classList.remove('hidden');
+                  icon.textContent = '−';
+                } else {
+                  content.classList.add('hidden');
+                  icon.textContent = '+';
+                }
+              });
+            });
+          });
+        </script>
+      </div>
     </section>
 
     <!-- Call to Action -->
