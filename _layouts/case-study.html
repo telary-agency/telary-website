@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.active_lang }}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/patterns.css' | relative_url }}" />
+  <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="65f5dcd8-b94c-4d82-aa34-6bc36f99c13f" async></script>
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:image" content="{{ page.og_image | default: '/assets/img/ogsite.png' | absolute_url }}" />
+  <meta property="og:title" content="{{ page.title }} - Case Study" />
+  <meta property="og:description" content="{{ page.excerpt | default: page.summary }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .stats-card:hover {
+      transform: translateY(-4px);
+      transition: transform 0.3s ease;
+    }
+    .quote-mark {
+      font-size: 4rem;
+      opacity: 0.3;
+      line-height: 1;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  {% include navbar.html %}
+  
+  <!-- Hero Section -->
+  <section class="gradient-bg text-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="mb-4">
+            {% if page.industry %}
+            <span class="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-sm font-medium">
+              {{ page.industry }}
+            </span>
+            {% endif %}
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">{{ page.title }}</h1>
+          <p class="text-xl text-white text-opacity-90 mb-8">{{ page.subtitle | default: page.summary }}</p>
+          
+          <!-- Key Stats Preview -->
+          {% if page.key_stats %}
+          <div class="grid grid-cols-2 gap-6">
+            {% for stat in page.key_stats limit:2 %}
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">{{ stat.value }}</div>
+              <div class="text-white text-opacity-80 text-sm">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        
+        <!-- Company Logo/Image -->
+        <div class="text-center">
+          {% if page.company_logo %}
+          <img src="{{ page.company_logo | relative_url }}" alt="{{ page.company_name }} logo" 
+               class="max-w-xs mx-auto bg-white p-8 rounded-lg shadow-lg">
+          {% else %}
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm p-12 rounded-lg">
+            <h2 class="text-2xl font-bold text-white">{{ page.company_name }}</h2>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="text-center">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Company</h3>
+          <p class="text-lg font-medium text-gray-900">{{ page.company_name }}</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Industry</h3>
+          <p class="text-lg font-medium text-gray-900">{{ page.industry }}</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Company Size</h3>
+          <p class="text-lg font-medium text-gray-900">{{ page.company_size }}</p>
+        </div>
+      </div>
+      
+      <div class="prose prose-lg max-w-none">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">About {{ page.company_name }}</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">{{ page.company_description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">The Challenge</h2>
+        <div class="prose prose-lg max-w-none">
+          {{ page.challenge | markdownify }}
+        </div>
+      </div>
+      
+      {% if page.pain_points %}
+      <div class="grid md:grid-cols-2 gap-8">
+        {% for point in page.pain_points %}
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <div class="flex items-start">
+            <div class="flex-shrink-0">
+              <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-gray-900 mb-2">{{ point.title }}</h3>
+              <p class="text-gray-600">{{ point.description }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">The Solution</h2>
+      <div class="prose prose-lg max-w-none mb-12">
+        {{ page.solution | markdownify }}
+      </div>
+      
+      {% if page.solution_features %}
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {% for feature in page.solution_features %}
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900 mb-2">{{ feature.title }}</h3>
+          <p class="text-gray-600">{{ feature.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Data Sources Section -->
+  {% if page.data_sources %}
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Integrated Data Sources</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Telary seamlessly connected and unified data from {{ page.company_name }}'s existing systems, creating a single source of truth for all business operations.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {% for source in page.data_sources %}
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+          {% if source.logo %}
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-gray-50 rounded-lg">
+            <img src="{{ source.logo | relative_url }}" alt="{{ source.name }} logo" class="max-w-12 max-h-12">
+          </div>
+          {% else %}
+          <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-purple-100 rounded-lg">
+            <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          {% endif %}
+          <h3 class="font-semibold text-gray-900 mb-1">{{ source.name }}</h3>
+          <p class="text-sm text-purple-600 font-medium mb-2">{{ source.type }}</p>
+          <p class="text-xs text-gray-600 leading-relaxed">{{ source.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      
+      <div class="mt-12 text-center">
+        <div class="bg-white p-8 rounded-lg shadow-sm inline-block">
+          <div class="flex items-center justify-center space-x-4 mb-4">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 bg-blue-500 rounded-full border-2 border-white"></div>
+              <div class="w-8 h-8 bg-green-500 rounded-full border-2 border-white"></div>
+              <div class="w-8 h-8 bg-purple-500 rounded-full border-2 border-white"></div>
+              <div class="w-8 h-8 bg-red-500 rounded-full border-2 border-white"></div>
+            </div>
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600">
+            <span class="font-medium text-gray-900">{{ page.data_sources | size }}+ data sources</span> unified into one powerful platform
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Results Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Results & Impact</h2>
+      
+      {% if page.key_stats %}
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        {% for stat in page.key_stats %}
+        <div class="bg-white p-8 rounded-lg shadow-sm text-center stats-card">
+          <div class="text-4xl font-bold text-purple-600 mb-2">{{ stat.value }}</div>
+          <div class="text-gray-600 font-medium">{{ stat.label }}</div>
+          {% if stat.description %}
+          <div class="text-sm text-gray-500 mt-2">{{ stat.description }}</div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      <div class="prose prose-lg max-w-none">
+        {{ page.results | markdownify }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  {% if page.testimonial %}
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-gray-50 rounded-2xl p-12 relative">
+        <div class="quote-mark text-purple-200 absolute top-4 left-8">"</div>
+        <blockquote class="text-xl text-gray-700 italic mb-8 relative z-10">
+          "{{ page.testimonial.quote }}"
+        </blockquote>
+        <div class="flex items-center">
+          {% if page.testimonial.photo %}
+          <img src="{{ page.testimonial.photo | relative_url }}" alt="{{ page.testimonial.name }}" 
+               class="w-16 h-16 rounded-full mr-4">
+          {% endif %}
+          <div>
+            <div class="font-medium text-gray-900">{{ page.testimonial.name }}</div>
+            <div class="text-gray-600">{{ page.testimonial.title }}</div>
+            <div class="text-gray-500">{{ page.testimonial.company }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Data Operations?</h2>
+      <p class="text-xl text-purple-100 mb-8">See how Telary can help your organization achieve similar results.</p>
+      <div class="space-x-4">
+        <a href="/contact" class="bg-white text-purple-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+          Get Started
+        </a>
+        <a href="/demo" class="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-purple-700 transition-colors">
+          Schedule Demo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+</body>
+
+</html>
