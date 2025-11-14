@@ -255,7 +255,7 @@ permalink: /
               </button>
               <div id="operations-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
                 <p class="text-gray-600 mb-3">Streamline inventory management, optimize supply chain, and monitor operational efficiency metrics.</p>
-                <a href="/blog/operations-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+                <a href="/posts/pharma" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
             </div>
 
