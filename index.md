@@ -11,7 +11,7 @@ permalink: /
     <section class="bg-white py-20 px-6 text-center shadow-md textured-section-hero">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-5xl font-extrabold text-purple-700 mb-4">
-          Your data. Ready for <span id="rotating-text" class="inline-block min-w-[250px] text-left">AI.</span>
+          Your data. Ready for <span id="rotating-text" class="inline-block min-w-[250px] text-left">Insights.</span>
         </h1>
         <p class="text-xl text-gray-600 mb-6">
           Headache free data management tool for ambitious SMBs and startups.
@@ -26,7 +26,7 @@ permalink: /
         </style>
         <script>
           (function() {
-            const words = ['AI.', 'Insights.', 'Monitoring.'];
+            const words = ['Insights.', 'Reporting.', 'Analytics.', 'AI.', 'Machine Learning.'];
             let currentIndex = 0;
             const element = document.getElementById('rotating-text');
             
@@ -60,10 +60,10 @@ permalink: /
         <section class="bg-white py-24">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h2 class="text-3xl sm:text-4xl font-bold text-purple-700 mb-4">
-      Unlock new opportunities for your teams
+      From scatttered data to insights
     </h2>
     <p class="text-gray-600 max-w-2xl mx-auto mb-16">
-      Turn data complexity into impact across reporting, insights, forecasting and AI.
+      Unlock new opportunities for your teams
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 text-left">
@@ -91,7 +91,7 @@ permalink: /
     </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Insights</h3>
         <p class="text-gray-600">
-          Dive deep into your operations—from marketing to inventory—to uncover actionable insights.
+          Dive deep into your operations, from marketing to inventory, to uncover actionable insights.
         </p>
       </div>
 
@@ -105,7 +105,7 @@ permalink: /
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">Predictive Analytics</h3>
         <p class="text-gray-600">
-          Harness machine learning to anticipate trends and make smarter decisions before they happen.
+          Harness machine learning to anticipate trends and make smarter decisions.
         </p>
       </div>
 
@@ -119,7 +119,7 @@ permalink: /
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">AI-Powered Agents</h3>
         <p class="text-gray-600">
-          Train your AI on clean, trustworthy data—so your agents don’t just react, they drive value.
+          Train your AI with trustworthy data they can truly learn from.
         </p>
       </div>
     </div>
@@ -199,10 +199,10 @@ permalink: /
           <!-- Left Column - Title and CTA -->
           <div class="space-y-6">
             <h2 class="text-3xl font-bold text-purple-700">
-              Explore Real-World Use Cases
+              How could your team leverage Telary?
             </h2>
             <p class="text-lg text-gray-600">
-              Discover how different departments can leverage Telary to transform their data into actionable insights.
+              Read our use cases and discover how data driven Startups & SMBs are getting value out of their data.
             </p>
             <a href="/usecases" class="inline-block bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-800 transition">
               View All Use Cases
@@ -212,7 +212,7 @@ permalink: /
           <!-- Right Column - Use Case Drawers -->
           <div class="space-y-4">
             <!-- Finance Drawer -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <!-- <div class="border border-gray-200 rounded-lg overflow-hidden">
               <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="finance-content">
                 <h3 class="text-lg font-semibold text-gray-900">💰 Finance</h3>
                 <span class="text-2xl text-purple-700 use-case-icon">+</span>
@@ -221,7 +221,7 @@ permalink: /
                 <p class="text-gray-600 mb-3">Automate financial reporting, track KPIs, and gain real-time visibility into cash flow and profitability.</p>
                 <a href="/blog/finance-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
-            </div>
+            </div> -->
 
             <!-- Sales Drawer -->
             <div class="border border-gray-200 rounded-lg overflow-hidden">
@@ -231,12 +231,12 @@ permalink: /
               </button>
               <div id="sales-content" class="use-case-content hidden px-4 pb-4 bg-gray-50">
                 <p class="text-gray-600 mb-3">Track sales performance, forecast revenue, and optimize your sales funnel with data-driven insights.</p>
-                <a href="/blog/sales-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
+                <a href="/posts/salesco" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
             </div>
 
             <!-- Marketing Drawer -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <!-- <div class="border border-gray-200 rounded-lg overflow-hidden">
               <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="marketing-content">
                 <h3 class="text-lg font-semibold text-gray-900">🎯 Marketing</h3>
                 <span class="text-2xl text-purple-700 use-case-icon">+</span>
@@ -245,7 +245,7 @@ permalink: /
                 <p class="text-gray-600 mb-3">Measure campaign effectiveness, understand customer acquisition costs, and optimize marketing spend across channels.</p>
                 <a href="/blog/marketing-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
-            </div>
+            </div> -->
 
             <!-- Operations Drawer -->
             <div class="border border-gray-200 rounded-lg overflow-hidden">
@@ -260,7 +260,7 @@ permalink: /
             </div>
 
             <!-- Product Drawer -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <!-- <div class="border border-gray-200 rounded-lg overflow-hidden">
               <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="product-content">
                 <h3 class="text-lg font-semibold text-gray-900">🚀 Product</h3>
                 <span class="text-2xl text-purple-700 use-case-icon">+</span>
@@ -269,10 +269,10 @@ permalink: /
                 <p class="text-gray-600 mb-3">Analyze user behavior, track feature adoption, and make data-driven product decisions to improve user experience.</p>
                 <a href="/blog/product-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
-            </div>
+            </div> -->
 
             <!-- Customer Service Drawer -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <!-- <div class="border border-gray-200 rounded-lg overflow-hidden">
               <button class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left use-case-toggle" data-target="customer-service-content">
                 <h3 class="text-lg font-semibold text-gray-900">💬 Customer Service</h3>
                 <span class="text-2xl text-purple-700 use-case-icon">+</span>
@@ -281,7 +281,7 @@ permalink: /
                 <p class="text-gray-600 mb-3">Monitor support ticket trends, measure response times, and identify opportunities to improve customer satisfaction.</p>
                 <a href="/blog/customer-service-data-use-cases" class="text-purple-700 hover:text-purple-800 font-medium">Read detailed case study →</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
