@@ -60,7 +60,7 @@ permalink: /
         <section class="bg-white py-24">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h2 class="text-3xl sm:text-4xl font-bold text-purple-700 mb-4">
-      From scatttered data to insights
+      From scattered data to insights
     </h2>
     <p class="text-gray-600 max-w-2xl mx-auto mb-16">
       Unlock new opportunities for your teams
